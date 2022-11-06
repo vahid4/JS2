@@ -52,3 +52,4 @@ console.log(isImranhere(niz));
 // Dok ako se jagoda nalazi unutar niza vratiti poziciju gde se ona nalzi. 
 a=prompt("unesite string")
 console.log(a)
+console.log("nesto")
