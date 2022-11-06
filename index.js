@@ -52,19 +52,19 @@ console.log(isImranhere(niz));
 // Dok ako se jagoda nalazi unutar niza vratiti poziciju gde se ona nalzi.
 
 
-// var nekafunk = () => {
-//   str = prompt("Unesite neki tekst");
-//   niz = str.split(" ");
-// //console.log(niz)
-//   if (niz.includes("jagoda")) {
-//     console.log(niz.indexOf("jagoda"));
-//   } else {
-//     console.log(niz.sort().unshift("10").push("100")) 
+var nekafunk = () => {
+  str = prompt("Unesite neki tekst");
+  niz = str.split(" ");
+//console.log(niz)
+  if (niz.includes("jagoda")) {
+    console.log(niz.indexOf("jagoda"));
+  } else {
+    niz.sort().push("100")
+    console.log(niz)
      
-// }
-// };
-// nekafunk();
+}
+};
+nekafunk();
 
-niz=["vahid", "bostan", "knjiga"]
-console.log(niz.push("100"))
+
 
