@@ -51,6 +51,8 @@ console.log(isImranhere(niz));
 //ne nalazi unutar niza, funkcija neka vrati taj niz poredjan abecedno, s tim sto ce se na prvom mestu dodati broj 10, a na poslednjem broj 100.
 // Dok ako se jagoda nalazi unutar niza vratiti poziciju gde se ona nalzi.
 
+//---------------------domaciiiiiiiiiiiiiii---------------------------------
+
 var nekafunk = () => {
   str = prompt("Unesite neki tekst");
   niz = str.split(" ");
@@ -58,9 +60,11 @@ var nekafunk = () => {
   if (niz.includes("jagoda")) {
     console.log(niz.indexOf("jagoda"));
   } else {
-    niz.sort().push("100");
-    niz.unshift("10")
+    niz.sort().push(100);
+    niz.unshift(10);
     console.log(niz);
   }
 };
 nekafunk();
+
+//---------------------------------------------------------------
