@@ -6,4 +6,3 @@
 // console.log(dvabroja(5,3))
 
 //console.log((!"Muhamed"))
-console.log("nestoo")
