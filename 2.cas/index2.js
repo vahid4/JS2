@@ -6,4 +6,4 @@
 // console.log(dvabroja(5,3))
 
 //console.log((!"Muhamed"))
-console.log(sizeOf(1234))
+console.log("nestoo")
