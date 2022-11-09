@@ -1,1 +1,1 @@
-console.log(15+1000000)
+console.log(15+10)
