@@ -54,7 +54,7 @@
 // console.log(osoba.imeIprezime());
 
 //napraviti objekat student koji ce da ima vrednosti po zelji, svojstava ime,prezime,broj indeksa,
-//ocene(niz svih ocena koje student ima u trenutnoj godini), prosek ocena funkcija koja na osnovu niza
+//ocene(niz svih ocena koje student ima u trenutnoj godini), prosek ocena funkcija koja na osnovu niza,
 //ocene vraca prosek datih ocena
 
 const student = {
@@ -63,23 +63,13 @@ const student = {
   broj_indeksa: "035030",
   ocene: [6, 9, 8, 6, 7, 6, 9, 6],
   prosek: function () {
-      let zbir=0;
-    for (let i=0; i<this.ocene.length;i++) {
+    let zbir = 0;
+    for (let i = 0; i < this.ocene.length; i++) {
       zbir += this.ocene[i];
     }
-  
-   let prosecna = zbir / this.ocene.length;
-  console.log(prosecna)
+
+    let prosecna = zbir / this.ocene.length;
+    console.log(prosecna);
   },
 };
 student.prosek();
-
-// niz=[5,5,5]
-// let zbir=0
-// let prosek
-// for (let i = 0; i< niz.length; i++) {
-//   zbir += niz[i];
-//   prosek=zbir/niz.length
-// }
-// console.log(zbir)
-// console.log(prosek)
