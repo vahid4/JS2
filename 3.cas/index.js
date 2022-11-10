@@ -59,7 +59,7 @@
 
 const student = {
   ime: "Vahid",
-  prezime: "Gasanin",
+    prezime: "Gasanin",
   broj_indeksa: "035030",
   ocene: [6, 9, 8, 6, 7, 6, 9, 6],
   prosek: function () {
@@ -69,7 +69,8 @@ const student = {
     }
 
     let prosecna = zbir / this.ocene.length;
-    console.log(prosecna);
+    console.log(`Prosecna ocena studenta ${this.ime +" "+ this.prezime} je ${prosecna}.` );
   },
 };
+//console.log(student.broj_indeksa)
 student.prosek();
