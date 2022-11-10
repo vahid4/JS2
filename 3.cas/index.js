@@ -53,7 +53,9 @@
 // }
 // console.log(osoba.imeIprezime());
 
-//napraviti objekat student koji ce da ima vrednosti po zelji, svojstava ime,prezime,broj indeksa,ocene(niz svih ocena koje student ima u trenutnoj godini), prosek ocena funkcija koja na osnovu niza ocene vraca prosek datih ocena
+//napraviti objekat student koji ce da ima vrednosti po zelji, svojstava ime,prezime,broj indeksa,
+//ocene(niz svih ocena koje student ima u trenutnoj godini), prosek ocena funkcija koja na osnovu niza
+//ocene vraca prosek datih ocena
 
 const student={
     
@@ -65,4 +67,5 @@ const student={
         
     }
 }
-console.log("apii");
+console.log("12-3");
+
