@@ -67,5 +67,5 @@ const student={
         
     }
 }
-console.log("12-3");
+console.log(5);
 
