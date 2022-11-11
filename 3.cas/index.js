@@ -67,12 +67,17 @@ const student = {
     for (let i = 0; i < this.ocene.length; i++) {
       zbir += this.ocene[i];
     }
-
     let prosecna = zbir / this.ocene.length;
     console.log(
       `Prosecna ocena studenta ${this.ime + " " + this.prezime} je ${prosecna}.`
     );
+    // drugi nacin------------------------------
+    //  const brojOcena=this.ocene.length;
+    //  const suma=this.ocene.reduce((previousValue, currentValue)=>previousValue+currentValue)
+    //  const prosek=suma/brojOcena;
+    //  console.log(prosek)
   },
 };
 //console.log(student.broj_indeksa)
 student.prosek();
+
