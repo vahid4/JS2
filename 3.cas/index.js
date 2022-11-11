@@ -61,7 +61,7 @@ const student = {
   ime: "Vahid",
   prezime: "Gasanin",
   broj_indeksa: "035030",
-  ocene: [6, 9, 8, 6, 7, 6, 9, 6],
+  ocene: [6, 9, 8, 6, 7, 6, 9, 9],
   prosek: function () {
     let zbir = 0;
     for (let i = 0; i < this.ocene.length; i++) {
