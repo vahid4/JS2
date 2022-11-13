@@ -67,8 +67,6 @@ smanjenjeBrzine:function(s) {
   
 }
     
-
-
 myCar.povecanjeBrzine(210)
 myCar.smanjenjeBrzine(30)
 console.log(myCar.trenutnaBrzina)
