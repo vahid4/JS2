@@ -49,28 +49,27 @@ const myCar = {
   udaran: true,
   trenutnaBrzina: 0,
   maksimalnaBrzina: 260,
-  povecanjeBrzine:function (p) {
-    
-      
-      if (p<=260) {
-        this.trenutnaBrzina+=p;
-        console.log( `Vasa brzina je ${this.trenutnaBrzina}km/h.`)
-      }else
-      console.log(`Ne mozete ici ${p}km/h jer je vasa maximalna brzina 260km/h`)
-      },
-  
-smanjenjeBrzine:function(s) {
-  
-  if (this.trenutnaBrzina>=s) {
-    this.trenutnaBrzina-=s;
-    console.log( `Vasa brzina je ${this.trenutnaBrzina}km/h.`)
-  }else
-  console.log(`Ne mozete ici ${s}km/h jer je vasa minimalna brzina 0km/h`)
-  }
-  
-}
-    
-myCar.povecanjeBrzine(200)
-myCar.smanjenjeBrzine(30)
-console.log(myCar.trenutnaBrzina)
+  povecanjeBrzine: function (p) {
+    if (this.trenutnaBrzina + p <= 260) {
+      this.trenutnaBrzina += p;
+      console.log(`Vasa brzina je ${this.trenutnaBrzina}km/h.`);
+    } else
+      console.log(
+        `Ne mozete ici ${p}km/h jer je vasa maximalna brzina 260km/h`
+      );
+  },
 
+  smanjenjeBrzine: function (s) {
+    if (this.trenutnaBrzina - s >= s) {
+      this.trenutnaBrzina -= s;
+      console.log(`Vasa brzina je ${this.trenutnaBrzina}km/h.`);
+    } else
+      console.log(`Ne mozete ici ${s}km/h jer je vasa minimalna brzina 0km/h`);
+  },
+};
+
+myCar.povecanjeBrzine(200);
+myCar.smanjenjeBrzine(30);
+console.log(myCar.trenutnaBrzina);
+
+// myCar.trenutnaBrzina=0;------dodavanje propertija u objekat------
