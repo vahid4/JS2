@@ -88,5 +88,5 @@ function poruka(grad,drzava) {
 //bind() funkcionise na nacin da prvo dodelimo datu funkciju sa objektom nekoj promenjiljivoj i onda tu promenljivu 
 // ili funkciju pozovemo sa  potrebnim argumentima.
 
-const bindFunction=poruka.bind(restoran2)
-console.log(bindFunction("Tutinburg", "Srbija"))
+// const bindFunction=poruka.bind(restoran2)
+// console.log(bindFunction("Tutinburg", "Srbija"))
