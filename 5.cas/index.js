@@ -18,30 +18,44 @@
 //---------domaci-------------------------
 // 2. Zadatak
 
-// const automobil = {
-//     marka: "Audi",
-//     model: "Q7",
-//     boja: "Bela",
-//     pogon: "quattro",
-//     menjac: "Automatik",
-//     km:240000,
-//     vlasnik:[062321552,063930630],
-//     garaza:{
-//         parking:"JKP Servis",
-//         vikend:"od 17 free",
-//         satnaKarta: "50",
-//         dnevnaKarta: "200",
-//         mesecnaKarta: "2000",
-//         platiZa: function(od, do) {
-      
-// }
-//     }
-// }
-// automobil.platiZa()
+const automobil = {
+    marka: "Audi",
+    model: "Q7",
+    boja: "Bela",
+    pogon: "quattro",
+    menjac: "Automatik",
+    km:240000,
+    vlasnik:[062321552],
+    garaza:{
+        parking:"JKP Servis",
+        vikend:"od 17 free",
+        satnaKarta: "50",
+        dnevnaKarta: "200",
+        mesecnaKarta: "2000",
+        platiZa: function(from,to) {
+      prviDatum=new Date(from)
+      drugiDatum=new Date(to)
+      razlika=parseInt((prviDatum-drugiDatum)/(1000*60*60*24),10)
+      razlika=Math.abs(razlika)
+      console.log(razlika)
+    }
+    }
+}
+
+ automobil.garaza.platiZa("2022-03-26","2022-04-26")
 //------------------------
-const d=new Date("2022-03-26")
-const v=new Date("2022-04-26")
-console.log(parseInt((d-v)/(1000*60*60*24),10))
+// const d=new Date("2022-03-26")
+// const v=new Date("2022-04-26")
+// razlika=parseInt((d-v)/(1000*60*60*24),10)
+// razlika=Math.abs(razlika)
+// console.log(razlika)
+// if(razlika/30>1){
+//     brojMeseci=razlika/30
+//     brojMeseci=Math.floor(brojMeseci)
+//     console.log(brojMeseci)
+// }
+// cenaMeseci=brojMeseci*2000;
+
 
 
 // var date1 = new Date("7/11/2010");
