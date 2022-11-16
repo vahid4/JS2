@@ -69,10 +69,7 @@ const automobil = {
 //     brojMeseci=Math.floor(brojMeseci)
 //     console.log(brojMeseci)
 // }
-// cenaMeseci=brojMeseci*2000;
-
-
-
+//------------------------------------
 // var date1 = new Date("7/11/2010");
 // var date2 = new Date("7/15/2010");
 // var diffDays = parseInt((date2 - date1) / (1000 * 60 * 60 * 24), 10); 
