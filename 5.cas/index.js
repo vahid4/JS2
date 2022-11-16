@@ -30,14 +30,29 @@ const automobil = {
         parking:"JKP Servis",
         vikend:"od 17 free",
         satnaKarta: "50",
-        dnevnaKarta: "200",
+        dnevnaKarta: "700",
         mesecnaKarta: "2000",
         platiZa: function(from,to) {
       prviDatum=new Date(from)
       drugiDatum=new Date(to)
       razlika=parseInt((prviDatum-drugiDatum)/(1000*60*60*24),10)
       razlika=Math.abs(razlika)
-      console.log(razlika)
+      //console.log(`Ostali ste ${razlika} dana na parkingu.`)
+      if(razlika/30>=1){
+        brojMeseci=razlika/30;
+        brojMeseci=Math.floor(brojMeseci)
+        cenaMeseci=brojMeseci*(+this.mesecnaKarta)
+        //console.log(`Broj meseci je ${brojMeseci}`)
+       // console.log(`Vasa mesecna karta iznosi ${cenaMeseci}`)
+      }    
+      brojDana=razlika%30
+      cenaDana=brojDana*this.dnevnaKarta;    
+     // console.log(cenaDana)
+      console.log(`Ostali ste ${brojMeseci} mesec/a i ${brojDana} dana na parkingu`)
+      console.log(`Iznos vasih mesecnih karti iznosi ${cenaMeseci}`)
+      console.log(`Iznos vasih dnevnih karti iznosi ${cenaDana}`)
+      console.log(`Ukupan iznos vaseg racuna je +${cenaMeseci+cenaDana} rsd`)
+
     }
     }
 }
