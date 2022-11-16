@@ -48,10 +48,10 @@ const automobil = {
       brojDana=razlika%30
       cenaDana=brojDana*this.dnevnaKarta;    
      // console.log(cenaDana)
-      console.log(`Ostali ste ${brojMeseci} mesec/a i ${brojDana} dana na parkingu`)
-      console.log(`Iznos vasih mesecnih karti iznosi ${cenaMeseci}`)
-      console.log(`Iznos vasih dnevnih karti iznosi ${cenaDana}`)
-      console.log(`Ukupan iznos vaseg racuna je +${cenaMeseci+cenaDana} rsd`)
+      console.log(`Ostali ste ${brojMeseci} mesec/a i ${brojDana} dan/a na parkingu.`)
+      console.log(`Iznos vasih mesecnih karti iznosi ${cenaMeseci} rsd`)
+      console.log(`Iznos vasih dnevnih karti iznosi ${cenaDana} rsd`)
+      console.log(`Ukupan iznos vaseg racuna je ${cenaMeseci+cenaDana} rsd`)
 
     }
     }
