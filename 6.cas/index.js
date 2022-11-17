@@ -89,4 +89,5 @@ function poruka(grad,drzava) {
 // ili funkciju pozovemo sa  potrebnim argumentima.
 
 // const bindFunction=poruka.bind(restoran2)
-// console.log(bindFunction("Tutinburg", "Srbija"))
+// console.log(bindFunction("Tutinburg", "Srbija")
+console.log("nesto")
