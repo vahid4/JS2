@@ -91,3 +91,8 @@ function poruka(grad,drzava) {
 // const bindFunction=poruka.bind(restoran2)
 // console.log(bindFunction("Tutinburg", "Srbija")
 
+const arr = [10, 9, 8, 7, 6];
+
+for (let i = 0; i < arr.length; i++) {
+   console.log(i);
+}
