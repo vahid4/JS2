@@ -91,4 +91,4 @@ function poruka(grad,drzava) {
 // const bindFunction=poruka.bind(restoran2)
 // console.log(bindFunction("Tutinburg", "Srbija")
 
-console.log(93.8723416378)
+console.log(93.6378)
