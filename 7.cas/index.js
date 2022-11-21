@@ -26,3 +26,4 @@ function povecaj() {
 }
 
 console.log(povecaj.call(automobil.garaza))
+console.log(povecaj.apply(automobil.garaza))
