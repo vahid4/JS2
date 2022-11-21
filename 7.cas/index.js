@@ -63,3 +63,23 @@
 // const{ marka, model}=automobil; //destructuring
 // console.log(marka,model)
 
+// const godine = [
+//   { starost: 19 },
+//   { starost: 19 },
+//   { starost: 18 },
+//   { starost: 16 },
+//   { starost: 17 },
+// ];
+
+// //Napraviti novi niz (punoletni) koji ce sadrzati one elemente cija je starost veca od 17.
+
+// const punoletni = 
+//   godine.filter((el) => {
+//     return el.starost > 17;
+//   })
+
+// console.log(punoletni);
+
+//napraviti niz objekata gde ce svaki objekat sadrzati:
+//ime,prezime,starost,bojaOciju,bojaKose,polozenC.
+//napraviti funkciju koja pravi novi niz i na kraju ga vraca, koja ce sadrzati one elemente cija boja ociju je braon i koji nisu polozili C.
