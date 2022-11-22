@@ -148,7 +148,7 @@ const niz = [
 
 napraviNiz=()=>{
     let noviNiz=[niz.filter((el)=>{
-        return el.bojaOciju==="braon"
+        return el.bojaOciju==="braon" && el.polozenC===true
     })]
     return noviNiz
     }
