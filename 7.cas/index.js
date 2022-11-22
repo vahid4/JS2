@@ -131,7 +131,7 @@ const niz = [
     starost: 18,
     bojaOciju: "plava",
     bojaKose: undefined,
-    polozenC: true,
+    polozenC: false,
   },
   {
     ime: "Amina",
