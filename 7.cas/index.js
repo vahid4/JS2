@@ -82,7 +82,10 @@
 
 //napraviti niz objekata gde ce svaki objekat sadrzati:
 //ime,prezime,starost,bojaOciju,bojaKose,polozenC.
-//napraviti funkciju koja pravi novi niz i na kraju ga vraca, koja ce sadrzati one elemente cija boja ociju je braon i koji nisu polozili C.
+//napraviti funkciju koja pravi novi niz i na kraju ga vraca, koja ce sadrzati one elemente
+// cija boja ociju je braon i koji nisu polozili C.
+
+
 
 const niz = [
   {
@@ -142,3 +145,11 @@ const niz = [
     polozenC: true,
   },
 ];
+
+napraviNiz=()=>{
+    let noviNiz=[niz.filter((el)=>{
+        return el.bojaOciju==="braon"
+    })]
+    return noviNiz
+    }
+console.log(napraviNiz())
