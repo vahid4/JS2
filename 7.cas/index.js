@@ -141,6 +141,4 @@ const niz = [
     bojaKose: "braon",
     polozenC: true,
   },
-  
-   
 ];
