@@ -85,8 +85,6 @@
 //napraviti funkciju koja pravi novi niz i na kraju ga vraca, koja ce sadrzati one elemente
 // cija boja ociju je braon i koji nisu polozili C.
 
-
-
 const niz = [
   {
     ime: "Vahid",
@@ -146,11 +144,26 @@ const niz = [
   },
 ];
 
-napraviNiz=(arr)=>{
-    let noviNiz=[arr.filter((el)=>{
-        return el.bojaOciju==="braon" && el.polozenC===false
-        
-    })]
-    return noviNiz
-    }
-console.log(napraviNiz(niz))
+napraviNiz = (arr) => {
+  let noviNiz = [
+    arr.filter((el) => {
+      return el.bojaOciju === "braon" && el.polozenC === false;
+    }),
+  ];
+  return noviNiz;
+};
+console.log(napraviNiz(niz));
+
+const person={
+  ime: "Abdurahman",
+  prezime: "Selimovic",
+  starost: 16,
+  bojaOciju: "braon",
+  bojaKose: "crna",
+  polozenC: false,
+}
+
+const {ime,prezime,starost}=person;
+console.log(ime)
+console.log(prezime)
+console.log(starost)
