@@ -209,10 +209,16 @@ arr=[-3, 4.8, 5, 3, -3.2]
 
 const squareList=(par)=>{
   const pozitivniNiz=par.filter((el)=>{
-    return el>0
+    return el>0 
+    && Number.isInteger(el)
   })
   console.log(pozitivniNiz)
 }
 console.log(squareList(arr))
 
-a=typeOf(2);
+
+
+   
+
+   
+
