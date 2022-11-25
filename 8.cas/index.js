@@ -205,7 +205,7 @@
 //  containing the squares of only the positive integers
 //  (decimal numbers are not integers) when an array of real numbers is passed to it.
 //   An example of an array of real numbers is [-3, 4.8, 5, 3, -3.2].
-arr=[-3, 4.8, 5, 3, -3.2]
+const arr=[-3, 4.8, 5, 3, -3.2]
 
 const squareList=(par)=>{
   const pozitivniNiz=par.filter((el)=>{
@@ -213,7 +213,7 @@ const squareList=(par)=>{
     && Number.isInteger(el)
   })
   //console.log(pozitivniNiz)
-  //return pozitivniNiz
+  
   const kvadrati=pozitivniNiz.map((el)=>{
      return el**2
   })
