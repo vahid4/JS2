@@ -212,7 +212,13 @@ const squareList=(par)=>{
     return el>0 
     && Number.isInteger(el)
   })
-  console.log(pozitivniNiz)
+  //console.log(pozitivniNiz)
+  //return pozitivniNiz
+  const kvadrati=pozitivniNiz.map((el)=>{
+     return el**2
+  })
+  return kvadrati
+
 }
 console.log(squareList(arr))
 
