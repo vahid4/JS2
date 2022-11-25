@@ -11,3 +11,13 @@ niz = [5, "nesto", 3, 9, 3, "nesto"];
 //   return novi;
 // };
 // console.log(skloniDuplikat(niz));
+
+//ovo ispod ne radi
+// const skloniDuplikat = (arr) => {
+//   let novi = [];
+//   novi = arr.filter((el) => {
+//     !novi.includes(el);
+//   });
+//   return novi;
+// };
+// console.log(skloniDuplikat(niz));
