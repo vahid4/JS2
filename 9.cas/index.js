@@ -1,5 +1,5 @@
 //napraviti funkciju koja nam vraca novi niz koji nema duplikata
-niz = [5, "nesto", 3, 9, 3, "nesto"];
+// niz = [5, "nesto", 3, 9, 3, "nesto"];
 
 // const skloniDuplikat = (arr) => {
 //   novi = [];
@@ -21,3 +21,8 @@ niz = [5, "nesto", 3, 9, 3, "nesto"];
 //   return novi;
 // };
 // console.log(skloniDuplikat(niz));
+
+// ... spread operator nam sluzi za kopiranje svih elemenata niza ili objekta u drugi niz ili objekat
+niz = [5, "nesto", 3, 9, 3, "nesto"];
+niz2 = [...niz];
+console.log(niz2);
