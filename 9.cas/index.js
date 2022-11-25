@@ -44,3 +44,38 @@
 // };
 
 // console.log(noviObj);
+
+// napraviti funkciju koja vraca novi niz gde je svaki element objekat sa vrednostima title,budzet.
+const movies = [
+  {
+    title: "Inception",
+    rating: 8,
+    budzet: "230M",
+  },
+  {
+    title: "Interstelar",
+    rating: 5,
+    budzet: "200M",
+  },
+  {
+    title: "Godfather",
+    rating: 9,
+    budzet: "300M",
+  },
+  {
+    title: "Home alone",
+    rating: 4,
+    budzet: "130M",
+  },
+];
+
+const novaFunkcija = (arr) => {
+  const noviNiz = arr.map((el) => {
+    return {
+      title: el.title,
+      budzet: el.budzet,
+    };
+  });
+  return noviNiz;
+};
+console.log(novaFunkcija(movies));
