@@ -189,7 +189,7 @@
 //   });
 //   console.log(ocene);
 //   const brojocena=ocene.length
-  
+
 //   const suma=ocene.reduce(function(a,b){
 //     return a+b
 //   })
@@ -205,26 +205,18 @@
 //  containing the squares of only the positive integers
 //  (decimal numbers are not integers) when an array of real numbers is passed to it.
 //   An example of an array of real numbers is [-3, 4.8, 5, 3, -3.2].
-const arr=[-3, 4.8, 5, 3, -3.2]
 
-const squareList=(par)=>{
-  const pozitivniNiz=par.filter((el)=>{
-    return el>0 
-    && Number.isInteger(el)
-  })
-  //console.log(pozitivniNiz)
-  
-  const kvadrati=pozitivniNiz.map((el)=>{
-     return el**2
-  })
-  return kvadrati
+const arr = [-3, 4.8, 5, 3, -3.2];
 
-}
-console.log(squareList(arr))
+const squareList = (par) => {
+  const pozitivniNiz = par.filter((el) => {
+    return el > 0 && el % 1 === 0;
+    //&& Number.isInteger(el)
+  });
 
-
-
-   
-
-   
-
+  const kvadrati = pozitivniNiz.map((el) => {
+    return el ** 2;
+  });
+  return kvadrati;
+};
+console.log(squareList(arr));
