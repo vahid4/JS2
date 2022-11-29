@@ -80,3 +80,4 @@ const novaFunkcija = (arr) => {
 };
 console.log(novaFunkcija(movies));
 console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
