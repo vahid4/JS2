@@ -79,4 +79,4 @@ const novaFunkcija = (arr) => {
   return noviNiz;
 };
 console.log(novaFunkcija(movies));
-console.log(5);
+console.log(10);
