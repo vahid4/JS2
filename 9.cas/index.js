@@ -81,3 +81,4 @@ const novaFunkcija = (arr) => {
 console.log(novaFunkcija(movies));
 
 console.log(Number.EPSILON);
+console.log(Number.MAX_VALUE);
