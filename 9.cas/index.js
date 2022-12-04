@@ -79,5 +79,3 @@ const novaFunkcija = (arr) => {
   return noviNiz;
 };
 console.log(novaFunkcija(movies));
-
-console.log(Number.EPSILON);
