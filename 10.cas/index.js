@@ -1,1 +1,5 @@
-console.log(5 + 5);
+const str = "Pera ima devojku";
+
+function nekaF(parameter) {
+  const novistr = "";
+}
