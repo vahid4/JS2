@@ -34,7 +34,6 @@ const CART_DATA = [
 ];
 const Funkcija = (arr) => {
   const numOfProducts = arr.length;
-  //  console.log(numOfProducts);
 
   const noviNiz = arr.map((el) => {
     return {
@@ -42,17 +41,15 @@ const Funkcija = (arr) => {
       totalPrice: el.price * el.amount,
     };
   });
-  //return noviNiz;
-  //console.log(noviNiz);
+
   const suma = noviNiz.map((element) => {
     return element.totalPrice;
   });
-  //console.log(suma);
+
   const ukupno = suma.reduce((a, b) => {
     return a + b;
   }, 320);
 
-  //console.log(ukupno);
   const shippingCost = 320;
   return `You got ${numOfProducts} in cart, shipping cost is ${shippingCost}, your total is ${ukupno}.`;
 };
