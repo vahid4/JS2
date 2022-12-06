@@ -13,4 +13,4 @@ function nekaF(parameter) {
 }
 
 console.log(nekaF(str));
-console.log(5);
+console.log(6);
