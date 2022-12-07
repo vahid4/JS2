@@ -124,11 +124,9 @@ const products = [
 function promeniCenu(par) {
   const snizeno = par.map((el) => {
     if (el.quantity > 40) {
-      el.price *= 0.6;
-      return el;
+      return (el.price *= 0.6);
     } else if (el.quantity > 20) {
-      el.price *= 0.8;
-      return el;
+      return (el.price *= 0.8);
     } else return el;
   });
   return snizeno;
