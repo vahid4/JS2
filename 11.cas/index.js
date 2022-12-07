@@ -26,13 +26,14 @@ const contacts = [
 ];
 
 function lookUpProfile(name, prop) {
-  for (i = 0; i <= contacts.length; i++) {
-    if (this.contacts.firstName.includes(name)) {
-      if (this.contacts.includes(prop)) {
-        return "nesto";
-      } else return "zadati prop se ne nalazi u listi objekata";
-    } else return "zadati name se ne nalazi u listi objekata";
-  }
+  const objectWithName = contacts.find((el) => {
+    return el.firstName === name;
+  });
+  if (objectWithName !== undefined) {
+    if (Object.keys(objectWithName).includes(prop))
+      return objectWithName[`${prop}`];
+    else return "no such property";
+  } else return "No such contact";
 }
 
 console.log(lookUpProfile("Akira", "likes"));
