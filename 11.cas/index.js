@@ -147,3 +147,10 @@ var library = [
     libraryID: 3245,
   },
 ];
+
+function sortiraj(niz) {
+  return niz.sort((a, b) => {
+    a.title > b.title;
+  });
+}
+console.log(sortiraj(library));
