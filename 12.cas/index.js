@@ -37,3 +37,13 @@
 // console.log(niz.sort());
 // console.log(niz2.sort());
 //---------------------------------------------------
+
+//iz 2 poslata niza vratiti 3. niz koji ce sadrzati elemente iz oba niza koji nizu sadrzani u drugom nizu
+
+// function treciNiz(prvi, drugi) {
+//   const noviNiz1 = prvi.filter((element) => !drugi.includes(element));
+//   const noviNiz2 = drugi.filter((element) => !prvi.includes(element));
+//   return [...noviNiz1, ...noviNiz2];
+// }
+
+// console.log(treciNiz([1, 2, 3, 4], [3, 4, 5, 6]));
