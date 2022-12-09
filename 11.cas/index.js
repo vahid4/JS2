@@ -149,8 +149,13 @@ var library = [
 ];
 
 function sortiraj(niz) {
-  return niz.sort((a, b) => {
-    a.title > b.title;
+  const novi = niz.map((el) => {
+    return el.title.sort();
   });
+  return novi;
+
+  // return niz.sort((a, b) => {
+  //   a.title > b.title;
+  // });
 }
 console.log(sortiraj(library));
