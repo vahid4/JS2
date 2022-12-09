@@ -47,3 +47,34 @@
 // }
 
 // console.log(treciNiz([1, 2, 3, 4], [3, 4, 5, 6]));
+
+// const person = {
+//   firstName: "Imran",
+//   lastName: "Hazirovic",
+// };
+
+// console.log(person);
+
+//svi objekti u JavaScriptu su povezani sa nekim prototip-objektom, tako da mozemo reci da svaki objekat ima protip.
+//Prototip je objekat koji sadrzi svojstva i metode.
+
+//  2 nacina pravljenja sablona za objekte:
+
+// 1. nacin: Constructor function(Konstruktor funkcija):
+function User(firstName, lastName, score) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.score = score;
+}
+User.prototype.incrementscore = function () {
+  this.score += 1;
+};
+
+const imran = new User("imranum", "hazirovic", 130);
+console.log(imran);
+imran.incrementscore();
+console.log(imran);
+
+const vahid = new User("Vahid", "Gasanin", 2);
+vahid.incrementscore();
+console.log(vahid);
