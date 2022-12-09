@@ -138,24 +138,24 @@
 //-----------------------------------------
 //Sort the specified array of objects by title value
 
-var library = [
-  { author: "Bill Gates", title: "The Road Ahead", libraryID: 1254 },
-  { author: "Steve Jobs", title: "Walter Isaacson", libraryID: 4264 },
-  {
-    author: "Suzanne Collins",
-    title: "Mockingjay: The Final Book of The Hunger Games",
-    libraryID: 3245,
-  },
-];
+// var library = [
+//   { author: "Bill Gates", title: "The Road Ahead", libraryID: 1254 },
+//   { author: "Steve Jobs", title: "Walter Isaacson", libraryID: 4264 },
+//   {
+//     author: "Suzanne Collins",
+//     title: "Mockingjay: The Final Book of The Hunger Games",
+//     libraryID: 3245,
+//   },
+// ];
 
-function sortiraj(niz) {
-  const novi = niz.map((el) => {
-    return el.title.sort();
-  });
-  return novi;
+// function sortiraj(niz) {
+//   const novi = niz.map((el) => {
+//     return el.title.sort();
+//   });
+//   return novi;
 
-  // return niz.sort((a, b) => {
-  //   a.title > b.title;
-  // });
-}
-console.log(sortiraj(library));
+//   // return niz.sort((a, b) => {
+//   //   a.title > b.title;
+//   // });
+// }
+// console.log(sortiraj(library));
