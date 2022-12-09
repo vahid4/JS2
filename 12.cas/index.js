@@ -61,20 +61,36 @@
 //  2 nacina pravljenja sablona za objekte:
 
 // 1. nacin: Constructor function(Konstruktor funkcija):
-function User(firstName, lastName, score) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.score = score;
+// function User(firstName, lastName, score) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.score = score;
+// }
+// User.prototype.incrementscore = function () {
+//   this.score += 1;
+// };
+
+// const imran = new User("imranum", "hazirovic", 130);
+// console.log(imran);
+// imran.incrementscore();
+// console.log(imran);
+
+// const vahid = new User("Vahid", "Gasanin", 2);
+// vahid.incrementscore();
+// console.log(vahid);
+
+function napraviAuto(marka, boja, godinaProizvodnje, udaran) {
+  this.marka = marka;
+  this.boja = boja;
+  this.godinaProizvodnje = godinaProizvodnje;
+  this.udaran = udaran;
 }
-User.prototype.incrementscore = function () {
-  this.score += 1;
+
+napraviAuto.prototype.sigurnoLupan = function () {
+  this.udaran = true;
 };
 
-const imran = new User("imranum", "hazirovic", 130);
-console.log(imran);
-imran.incrementscore();
-console.log(imran);
-
-const vahid = new User("Vahid", "Gasanin", 2);
-vahid.incrementscore();
-console.log(vahid);
+const peglica = new napraviAuto("fiat", "crvena", 1986, false);
+console.log(peglica);
+peglica.sigurnoLupan();
+console.log(peglica);
