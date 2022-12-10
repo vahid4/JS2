@@ -94,4 +94,4 @@ const peglica = new napraviAuto("fiat", "crvena", 1986, false);
 console.log(peglica);
 peglica.sigurnoLupan();
 console.log(peglica);
-console.log(5);
+console.log(5 + 5);
