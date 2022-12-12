@@ -27,19 +27,38 @@
 //unutar objekta userFunctions stavljamo sve metode koje zelino dodati
 //u objekte napravljene na sledeci nacin
 
-const userFunctions = {
-  fullName: function () {
-    return this.firstName + " " + this.lastName;
-  },
-};
+// const userFunctions = {
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
 
-function createUser(firstName, lastName) {
-  const newUser = Object.create(userFunctions);
-  newUser.firstName = firstName;
-  newUser.lastName = lastName;
-  return newUser;
+// function createUser(firstName, lastName) {
+//   const newUser = Object.create(userFunctions);
+//   newUser.firstName = firstName;
+//   newUser.lastName = lastName;
+//   return newUser;
+// }
+
+// const vahid = createUser("Vahid", "Gasanin");
+// console.log(vahid);
+// console.log(vahid.fullName());
+
+str1 = "PERA";
+str = "sladoled";
+
+function kombinacija(A, B) {
+  const duzina = A.length > B.length ? A.length : B.length;
+
+  let C = "";
+  for (let i = 0; i <= duzina - 1; i++) {
+    if (A[i] !== undefined && B[i] !== undefined) {
+      C += A[i] + B[i];
+    } else if (A[i] == undefined) {
+      C += B[i];
+    } else C += A[i];
+  }
+  return C;
 }
 
-const vahid = createUser("Vahid", "Gasanin");
-console.log(vahid);
-console.log(vahid.fullName());
+console.log(kombinacija(str1, str));
