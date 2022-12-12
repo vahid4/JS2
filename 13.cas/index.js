@@ -62,3 +62,4 @@ function kombinacija(A, B) {
 }
 
 console.log(kombinacija(str1, str));
+console.log(kombinacija("OVO JE DUZI STRING", str));
