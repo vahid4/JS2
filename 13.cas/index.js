@@ -44,22 +44,22 @@
 // console.log(vahid);
 // console.log(vahid.fullName());
 
-str1 = "PERA";
-str = "sladoled";
+// str1 = "PERA";
+// str = "sladoled";
 
-function kombinacija(A, B) {
-  const duzina = A.length > B.length ? A.length : B.length;
+// function kombinacija(A, B) {
+//   const duzina = A.length > B.length ? A.length : B.length;
 
-  let C = "";
-  for (let i = 0; i <= duzina - 1; i++) {
-    if (A[i] !== undefined && B[i] !== undefined) {
-      C += A[i] + B[i];
-    } else if (A[i] == undefined) {
-      C += B[i];
-    } else C += A[i];
-  }
-  return C;
-}
+//   let C = "";
+//   for (let i = 0; i <= duzina - 1; i++) {
+//     if (A[i] !== undefined && B[i] !== undefined) {
+//       C += A[i] + B[i];
+//     } else if (A[i] == undefined) {
+//       C += B[i];
+//     } else C += A[i];
+//   }
+//   return C;
+// }
 
-console.log(kombinacija(str1, str));
-console.log(kombinacija("OVO JE DUZI STRING", str));
+// console.log(kombinacija(str1, str));
+// console.log(kombinacija("OVO JE DUZI STRING", str));
