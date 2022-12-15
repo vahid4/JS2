@@ -7,4 +7,4 @@ const zbir = function (broj1, broj2) {
 // export zbir
 // export default zbir
 export default zbir;
-console.log(5)
+console.log(9);
