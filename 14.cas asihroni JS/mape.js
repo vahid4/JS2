@@ -32,3 +32,6 @@ console.log(fruits.has("jagoda"));
 fruits.forEach((el, key) => {
   console.log(el + " rsd", key);
 });
+
+//enteries() vraca iterator u obliku [key-value] parova
+console.log(fruits.entries());
