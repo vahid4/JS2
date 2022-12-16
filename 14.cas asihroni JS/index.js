@@ -61,6 +61,7 @@ niz = ["a", "b", "c", "d", "c", "a", "A"];
 
 function unikatniNiz(arr) {
   novi = new Set(arr);
-  return novi;
+
+  return [...novi];
 }
 console.log(unikatniNiz(niz));
