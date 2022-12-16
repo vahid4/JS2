@@ -9,9 +9,9 @@ function myFunc() {
   let broj = 4;
   let predmet = "stolice";
   function drugaFunkcija(arg) {
-    console.log(arg + 5);
+    console.log(arg + broj);
   }
-  drugaFunkcija(6);
+  drugaFunkcija(10);
   return "To je bio primer closure u JavaScriptu";
 }
 console.log(myFunc());
