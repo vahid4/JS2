@@ -16,12 +16,12 @@
 // }
 // console.log(myFunc());
 
-function nekaF() {
-  console.log("glavna funckija");
-  function sporednaF() {
-    console.log("sporedna f");
-    return 5;
-  }
-  return sporednaF();
-}
-console.log(nekaF());
+// function nekaF() {
+//   console.log("glavna funckija");
+//   function sporednaF() {
+//     console.log("sporedna f");
+//     return 5;
+//   }
+//   return sporednaF();
+// }
+// console.log(nekaF());
