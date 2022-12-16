@@ -53,3 +53,14 @@ letters.forEach((el) => console.log(el));
 
 //values() vraca iterator sa vrednostima datog seta
 console.log(letters.values());
+
+//napraviti funkciju koja iz datog niza vraca novi niz,
+//brisuci duplikate originalom. (koriscenjem setova)
+
+niz = ["a", "b", "c", "d", "c", "a", "A"];
+
+function unikatniNiz(arr) {
+  novi = new Set(arr);
+  return novi;
+}
+console.log(unikatniNiz(niz));
