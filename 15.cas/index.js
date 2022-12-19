@@ -23,10 +23,24 @@
 //   console.log(el);
 // });
 
-function pomocna() {
+// function pomocna() {
+//   console.log("pomocni posao");
+// }
+
+// mojaVar = pomocna;
+
+// mojaVar();
+
+function glavniPosao(arg1) {
+  console.log("glavni posao");
+  arg1();
+}
+
+function pomocniPosao() {
   console.log("pomocni posao");
 }
 
-mojaVar = pomocna;
+glavniPosao(pomocniPosao);
+console.log("++++++++++++++++++++++++++++++");
 
-mojaVar();
+setTimeout(pomocniPosao, 1000);
