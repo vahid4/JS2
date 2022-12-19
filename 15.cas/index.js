@@ -44,3 +44,5 @@ glavniPosao(pomocniPosao);
 console.log("++++++++++++++++++++++++++++++");
 
 setTimeout(pomocniPosao, 1000);
+
+console.log("==============================");
