@@ -16,4 +16,5 @@ const imatiCas = new Promise((resolve, reject) => {
 
 imatiCas
   .then(() => console.log("desio se RESOLVE.Imali smo cas"))
-  .catch(() => console.log("desio se REJECT.Nismo imali smo cas"));
+  .catch(() => console.log("desio se REJECT.Nismo imali smo cas"))
+  .finally(() => console.log("Poruka se ispisuje u svakom slucaju"));
