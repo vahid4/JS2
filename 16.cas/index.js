@@ -26,13 +26,20 @@
 // ispisati poruku da li je dobije  niz ili ne
 
 const isArray = new Promise((res, rej) => {
-  const niz = [5, 10, 13];
+  const response = 200;
 
-  if (Array.isArray(niz)) {
-    res();
+  if (response === 200) {
+    res([10, 12, 15, 1999]);
   } else rej();
 });
 
 isArray
-  .then(() => console.log("Jeste NIZ"))
+  .then((arg1) => {
+    console.log("Jeste NIZ");
+    const parni = arg1.filter((el) => {
+      return el % 2 == 0;
+    });
+    return parni;
+  })
+  .then((parniElementi) => console.log(parniElementi))
   .catch(() => console.log("Nije niz"));
