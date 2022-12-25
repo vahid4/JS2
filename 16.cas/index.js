@@ -25,26 +25,41 @@
 
 // ispisati poruku da li je dobije  niz ili ne
 
-const isArray = new Promise((res, rej) => {
-  const response = 200;
+// const isArray = new Promise((res, rej) => {
+//   const response = 200;
 
-  if (response === 200) {
-    res([10, 12, 15, 1999]);
-  } else rej();
-});
+//   if (response === 200) {
+//     res([10, 12, 15, 1999]);
+//   } else rej();
+// });
 
-isArray
-  .then((arg1) => {
-    console.log("Jeste NIZ");
-    const parni = arg1.filter((el) => {
-      return el % 2 == 0;
-    });
-    return parni;
-  })
-  .then((parniElementi) => console.log(parniElementi))
-  .catch(() => console.log("Nije niz"));
+// isArray
+//   .then((arg1) => {
+//     console.log("Jeste NIZ");
+//     const parni = arg1.filter((el) => {
+//       return el % 2 == 0;
+//     });
+//     return parni;
+//   })
+//   .then((parniElementi) => console.log(parniElementi))
+//   .catch(() => console.log("Nije niz"));
 
 //Napraviti promise koji proverava da li je neki objekat ispunio uslov da je njegov properti godine veci od 17 ili nije. U slucaju da je osoba punoletna then() funkcija vraca poruku vi ste punoletni. U slucaju da osoba nije punoletna catch() vraca broj godina osobe.
 // Napraviti promise koji proverava da li je neki objekat ispunio uslova da je njegov property godine veci od 17 ili nije.
 // U slucaju da je osoba punoletna then() funkcija vraca poruku "Vi ste punoletni".
 // U slucaju da osoba nije punoletna catch() vraca broj godina osobe.
+
+const is18 = new Promise((resolve, reject) => {
+  const person = {
+    ime: "Talib",
+    prezime: "Dolovac",
+    godine: 18,
+    vozacki: true,
+  };
+
+  if (person.godine > 17) {
+    resolve("Vi ste punoletni");
+  } else reject(person.godine);
+});
+
+is18.then((arg) => console.log(arg)).catch((arg2) => console.log(arg2));
