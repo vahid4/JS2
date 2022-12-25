@@ -28,15 +28,22 @@
 //--------------------------------------------------
 
 // fetch()
+//fetchamo podatke i prikazujemo ih
+// fetch("https://jsonplaceholder.typicode.com/users")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data);
+//     return (imena = data.map((el) => {
+//       return el.name;
+//     }));
+//   })
+//   .then((names) => console.log(names))
+//   .catch((err) => console.log(err));
 
-fetch("https://jsonplaceholder.typicode.com/users")
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data);
+const getPosts = async () => {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const posts = await response.json();
+  return posts;
+};
 
-    return (imena = data.map((el) => {
-      return el.name;
-    }));
-  })
-  .then((names) => console.log(names))
-  .catch((err) => console.log(err));
+getPosts().then((arg) => console.log(arg));
