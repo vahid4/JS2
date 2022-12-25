@@ -53,13 +53,13 @@ const is18 = new Promise((resolve, reject) => {
   const person = {
     ime: "Talib",
     prezime: "Dolovac",
-    godine: 18,
+    godine: 15,
     vozacki: true,
   };
 
   if (person.godine > 17) {
-    resolve("Vi ste punoletni");
-  } else reject(person.godine);
+    resolve("Vi ste punoletni.");
+  } else reject(`Niste punoletni jer imate ${person.godine} godina.`);
 });
 
 is18.then((arg) => console.log(arg)).catch((arg2) => console.log(arg2));
