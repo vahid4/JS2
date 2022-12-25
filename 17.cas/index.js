@@ -19,4 +19,8 @@ promise.then(() => {
 
 promise.then(() => {
   console.log(3);
+  promise.then(() => {
+    console.log(4);
+  });
+  console.log(5);
 });
