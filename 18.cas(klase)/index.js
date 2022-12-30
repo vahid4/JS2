@@ -15,15 +15,79 @@
 // console.log(newCar);
 // newCar.fullName();
 
-class Person {
-  constructor(name, surname) {
+// class Person {
+//   constructor(name, surname) {
+//     this.name = name;
+//     this.surname = surname;
+//   }
+//   fullName() {
+//     return console.log(this.name + " " + this.surname);
+//   }
+// }
+
+// const Vahid = new Person("Vahid", "Gasanin");
+// Vahid.fullName();
+
+// create a new class User with data like name, lName, year of birth
+
+class User {
+  constructor(name, lName, yearOfBirth) {
     this.name = name;
-    this.surname = surname;
+    this.lName = lName;
+    this.yearOfBirth = yearOfBirth;
   }
-  fullName() {
-    return console.log(this.name + " " + this.surname);
+  HowOldIsUser() {
+    let starost = 2022 - this.yearOfBirth;
+    return `${this.name} ${this.lName} ima ${starost} godina.`;
+  }
+}
+const Vahid = new User("Vahid", "Gasanin", 2003);
+console.log(Vahid.HowOldIsUser());
+
+class NasledjenaKlasa extends User {
+  statesArr = [
+    {
+      state: "USA",
+      cId: "+1",
+    },
+    {
+      state: "Mexico",
+      cId: "+52",
+    },
+    {
+      state: "India",
+      cId: "+91",
+    },
+    {
+      state: "China",
+      cId: "+86",
+    },
+    {
+      state: "Serbia",
+      cId: "+381",
+    },
+  ];
+
+  constructor(street, city, state, phoneNumber) {
+    super(Vahid.name, Vahid.lName, Vahid.yearOfBirth);
+
+    this.street = street;
+    this.city = city;
+    this.state = state;
+    this.phoneNumber = phoneNumber;
+    this.number = this.getNumber(this.state, this.phoneNumber);
+  }
+
+  getNumber(state, phoneNumber) {
+    this.findState = this.statesArr.find((el) => el.state === state);
+    return phoneNumber.replace(phoneNumber[0], this.findState.cId);
   }
 }
 
-const Vahid = new Person("Vahid", "Gasanin");
-Vahid.fullName();
+const Neko = new NasledjenaKlasa(
+  "Oslobodjenja",
+  "Novi Pazar",
+  "Serbia",
+  "0669754144"
+);
+console.log(Neko);
