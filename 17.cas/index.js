@@ -40,6 +40,7 @@
 //   .then((names) => console.log(names))
 //   .catch((err) => console.log(err));
 
+//izdvajanje fetchanih podataka
 const getPosts = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
   const posts = await response.json();
