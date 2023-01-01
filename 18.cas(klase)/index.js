@@ -80,6 +80,7 @@ class NasledjenaKlasa extends User {
 
   getNumber(state, phoneNumber) {
     this.findState = this.statesArr.find((el) => el.state === state);
+    console.log(this.findState);
     return phoneNumber.replace(phoneNumber[0], this.findState.cId);
   }
 }
