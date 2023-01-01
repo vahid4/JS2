@@ -92,4 +92,3 @@ const Neko = new NasledjenaKlasa(
   "0669754144"
 );
 console.log(Neko);
-console.log(12);
