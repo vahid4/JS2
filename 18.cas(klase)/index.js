@@ -42,7 +42,7 @@ class User {
   }
 }
 const Vahid = new User("Vahid", "Gasanin", 2003);
-console.log(Vahid.HowOldIsUser());
+//console.log(Vahid.HowOldIsUser());
 
 class NasledjenaKlasa extends User {
   statesArr = [
@@ -80,8 +80,21 @@ class NasledjenaKlasa extends User {
 
   getNumber(state, phoneNumber) {
     this.findState = this.statesArr.find((el) => el.state === state);
-    console.log(this.findState);
+    //console.log(this.findState);
     return phoneNumber.replace(phoneNumber[0], this.findState.cId);
+  }
+
+  ispis() {
+    this.beautify = {
+      name: Neko.name,
+      lName: Neko.lName,
+      yearOfBirth: Neko.yearOfBirth,
+      street: Neko.street,
+      state: Neko.state,
+      city: Neko.city,
+      number: Neko.number,
+    };
+    return this.beautify;
   }
 }
 
@@ -91,4 +104,13 @@ const Neko = new NasledjenaKlasa(
   "Serbia",
   "0669754144"
 );
-console.log(Neko);
+//console.log(Neko);
+
+// const obj = new NasledjenaKlasa(
+//   Neko.state,
+//   Neko.street,
+//   Neko.number,
+//   Neko.city
+// );
+// console.log(obj);
+console.log(Neko.ispis());
