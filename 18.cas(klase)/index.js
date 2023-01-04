@@ -106,11 +106,4 @@ const Neko = new NasledjenaKlasa(
 );
 //console.log(Neko);
 
-// const obj = new NasledjenaKlasa(
-//   Neko.state,
-//   Neko.street,
-//   Neko.number,
-//   Neko.city
-// );
-// console.log(obj);
 console.log(Neko.ispis());
