@@ -1,12 +1,14 @@
-class Car {
-  constructor(carName, carType) {
-    this.name = carName;
-    this.carType = carType;
-  }
-  showAttr() {
-    console.log(this.name, this.carType);
-  }
-}
+// class Car {
+//   constructor(carName, carType) {
+//     this.name = carName;
+//     this.carType = carType;
+//   }
+//   showAttr() {
+//     console.log(this.name, this.carType);
+//   }
+// }
 
-const newCar = new Car("audi", "limo");
-newCar.showAttr();
+// const newCar = new Car("audi", "limo");
+// newCar.showAttr();
+
+//06.01.2023 --------------------------------------

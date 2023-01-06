@@ -5,3 +5,8 @@
 // vrsi se pomocu this metode (npr. this.name)
 // metode su funkcije unutar klase koje takodje mogu vrsiti inicijalizaciju promenjljivih i obradu podataka
 // Svaka klasa MORA imati constructor metodu
+
+// 06.01.2023.
+
+// cd- change directory je komanda u terminalu koja sluzi za navigiranje kroz foldere unutar sistema
+// ls- je komanda koja sluzi za izlistavanje fajlova i foldera unutar foldera
