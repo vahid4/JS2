@@ -1,0 +1,34 @@
+.body {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+.main {
+  width: 70%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+.aside {
+  width: 30%;
+  height: 100%;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.p1 {
+  width: 100%;
+  font-size: xx-large;
+  border-bottom: 5px solid red;
+  margin: 20px;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+}
