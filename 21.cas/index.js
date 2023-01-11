@@ -15,3 +15,4 @@ var promeniP = document.getElementById("promenip");
 promeniP.addEventListener("click", () => {
   paragraf.innerText = "nesto bilo staaaaa";
 });
+// provali sto ne radi
