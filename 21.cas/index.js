@@ -16,3 +16,4 @@ promeniP.addEventListener("click", () => {
   paragraf.innerText = "nesto bilo staaaaa";
 });
 // provali sto ne radi
+// pa popravi
