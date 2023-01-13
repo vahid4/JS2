@@ -11,6 +11,7 @@
 // cd- change directory je komanda u terminalu koja sluzi za navigiranje kroz foldere unutar sistema
 // ls- je komanda koja sluzi za izlistavanje fajlova i foldera unutar foldera
 // mkdir- make directory je komanda koja sluzi za kreiranje novog direktorija ili foldera
+// cd .. - izadjes iz foldera
 
 // DOM- document object model
 // i sluzi za manipulaciju elementima html-a i css-a kroz JS kod
