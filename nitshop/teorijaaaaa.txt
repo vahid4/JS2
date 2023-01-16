@@ -10,4 +10,7 @@ the component will not be re-rendering. This can lead to a performance boost in 
 but its not used properly, it can lead to unexpected behaviour.
 
 bottomline, a component is the most basic and most used for building a block in React and
-PureComepoint is used when it needs some special optimization.
+PureComepoint is used when it needs some special optimization. 
+
+Props(properties) is a way for manipulating data and states.
+We can send data through props and we can send data to parent through props
