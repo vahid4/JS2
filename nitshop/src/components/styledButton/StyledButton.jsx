@@ -11,7 +11,7 @@ const StyledButton = (props) => {
   }
 
   return (
-    <button className="styledButton" onClick={() => buttonHandler()}>
+    <button className="styledButton" onClick={props.onClickHandler}>
       {props.innerText}
     </button>
   );
