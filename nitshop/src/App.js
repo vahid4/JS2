@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       <StyledHeader innerText="THISSSS ISSSSS HEADDDDDDEEEERRRRRR" />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <StyledInput onChangeHandler={onChangeFunction} value={inputValue} />
         <StyledButton innerText={innerText} onClickHandler={buttonClick} />
         <a
