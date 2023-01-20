@@ -7,7 +7,7 @@ import StyledHeader from "./components/styledButton/StyledHeader";
 function App() {
   const [innerText, setInnerText] = useState("");
   const [clicked, setClicked] = useState(false);
-
+  //nesto
   useEffect(() => {
     clicked ? setInnerText("Clicked") : setInnerText("Click me");
   }, [clicked]);
