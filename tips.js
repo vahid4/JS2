@@ -20,3 +20,4 @@
 // Child component is component which is included in Parent component
 // parent component can have more than one Child component
 // child components can be also found in other compponents as children(prop)
+// children as a prop is reserved name
