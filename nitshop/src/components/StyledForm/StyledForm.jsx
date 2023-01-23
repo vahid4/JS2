@@ -16,7 +16,7 @@ function StyledForm() {
   function buttonClick() {
     setClicked(!clicked);
   }
-
+  //nesto
   function onChangeFunction(e) {
     setInputValue(e.target.value);
     console.log(inputValue);
