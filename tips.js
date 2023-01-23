@@ -14,4 +14,9 @@
 // cd .. - izadjes iz foldera
 
 // DOM- document object model
-// i sluzi za manipulaciju elementima html-a i css-a kroz JS kod
+// i sluzi za manipulaciju elementima html-a i css-a kroz JS kod,
+
+// Parent component is component which is created
+// Child component is component which is included in Parent component
+// parent component can have more than one Child component
+// child components can be also found in other compponents as children(prop)
