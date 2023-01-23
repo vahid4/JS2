@@ -18,13 +18,12 @@ function App() {
   return (
     <div className="App">
       <StyledHeader innerText="THISSSS ISSSSS HEADDDDDDEEEERRRRRR" />
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <StyledDiv>
-          <h2>{fullname}</h2>
-        </StyledDiv>
-        <StyledForm sendData={(inputValue) => dataGrabber(inputValue)} />
-      </header>
+      {/* <header className="App-header"></header> */}
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      <StyledDiv>
+        <h2>{fullname}</h2>
+      </StyledDiv>
+      <StyledForm sendData={(inputValue) => dataGrabber(inputValue)} />
     </div>
   );
 }
