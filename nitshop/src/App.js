@@ -8,13 +8,22 @@ import StyledForm from "./components/StyledForm/StyledForm";
 import StyledDiv from "./components/StyledDiv/StyledDiv";
 
 function App() {
+  const [fullname, setFullName] = useState("");
+  function dataGrabber(inputValue) {
+    let fullname = inputValue;
+    console.log(fullname);
+    setFullName(fullname);
+  }
+
   return (
     <div className="App">
       <StyledHeader innerText="THISSSS ISSSSS HEADDDDDDEEEERRRRRR" />
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <StyledDiv />
-        <StyledForm />
+        <StyledDiv>
+          <h2>{fullname}</h2>
+        </StyledDiv>
+        <StyledForm sendData={(inputValue) => dataGrabber(inputValue)} />
       </header>
     </div>
   );

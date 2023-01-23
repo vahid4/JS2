@@ -4,7 +4,7 @@ import StyledButton from "../styledButton/StyledButton";
 import { useState, useEffect } from "react";
 import "./StyledForm.css";
 
-function StyledForm() {
+function StyledForm(props) {
   const [innerText, setInnerText] = useState("");
   const [clicked, setClicked] = useState(false);
   const [inputValue, setInputValue] = useState();
@@ -22,11 +22,15 @@ function StyledForm() {
     console.log(inputValue);
   }
   return (
-    <form>
+    <div>
       <label>Username</label>
       <StyledInput onChangeHandler={onChangeFunction} value={inputValue} />
-      <StyledButton innerText={innerText} onClickHandler={buttonClick} />
-    </form>
+      {/* <StyledButton innerText={innerText} onClickHandler={buttonClick} /> */}
+      <StyledButton
+        onClickHandler={() => props.sendData(inputValue)}
+        innerText="Send"
+      />
+    </div>
   );
 }
 
