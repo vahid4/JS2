@@ -21,15 +21,22 @@ function StyledForm(props) {
     setInputValue(e.target.value);
     //console.log(inputValue);
   }
+
+  const [addTask, setAddTask] = useState("");
+
   return (
     <div>
-      <label>Username</label>
+      <label>Write task</label>
       <StyledInput onChangeHandler={onChangeFunction} value={inputValue} />
       {/* <StyledButton innerText={innerText} onClickHandler={buttonClick} /> */}
       <StyledButton
         onClickHandler={() => props.sendData(inputValue)}
-        innerText="Send"
+        innerText="Create task"
       />
+      <div>
+        <h2>{inputValue}</h2>
+        <button>Delete task</button>
+      </div>
     </div>
   );
 }
