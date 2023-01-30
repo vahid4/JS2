@@ -1,0 +1,13 @@
+button {
+  width: 80px;
+  height: 35px;
+  margin: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(97, 218, 251);
+  font-size: x-large;
+}
+
+span {
+  color: rgb(97, 218, 251);
+}
