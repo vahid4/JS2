@@ -10,9 +10,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
-        <CustomDiv>
+        {/* <CustomDiv>
           <h2>Neki naslov mnogo dobar</h2>
-        </CustomDiv>
+        </CustomDiv> */}
       </header>
     </div>
   );
