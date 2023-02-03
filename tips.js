@@ -21,3 +21,8 @@
 // parent component can have more than one Child component
 // child components can be also found in other compponents as children(prop)
 // children as a prop is reserved name
+
+//rm- is a command which removes file or a directory
+// for directory we use special flas -rf, rm -rf someFolder
+
+// for stepback we use "cd .." command

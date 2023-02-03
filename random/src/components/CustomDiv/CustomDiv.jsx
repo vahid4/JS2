@@ -1,14 +1,15 @@
 import React from "react";
+import "./CustomDiv.css";
 
-function CustomDiv(
+const CustomDiv = ({
   children,
   width,
   height,
   borderRadius,
   border,
   padding,
-  margin
-) {
+  margin,
+}) => {
   const divWidth = width ? width : 100;
   const divHeight = height ? height : 100;
   const divBR = borderRadius ? borderRadius : 0;
@@ -30,6 +31,6 @@ function CustomDiv(
       {children}
     </div>
   );
-}
+};
 
 export default CustomDiv;
