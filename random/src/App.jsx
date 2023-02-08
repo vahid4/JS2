@@ -1,9 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Counter from "./components/Counter/Counter";
-import CustomDiv from "./components/CustomDiv/CustomDiv";
-import { Children } from "react";
 import GridCmp from "./components/GridCmp/GridCmp";
+import { AppBar } from "@mui/material";
+import PrimaryButton from "./components/PrimaryButton/PrimaryButton";
 
 function App() {
   return (
@@ -16,7 +14,13 @@ function App() {
     //     </CustomDiv> */}
     //   </header>
     // </div>
-    <GridCmp></GridCmp>
+    <>
+      {/* <AppBar /> */}
+      {/* <GridCmp></GridCmp> */}
+      <PrimaryButton padding={10} borderColor="yellow">
+        Primary button
+      </PrimaryButton>
+    </>
   );
 }
 
