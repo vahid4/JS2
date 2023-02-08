@@ -17,9 +17,10 @@ function App() {
     <>
       {/* <AppBar /> */}
       {/* <GridCmp></GridCmp> */}
-      <PrimaryButton padding={10} borderColor="yellow">
+      {/* <PrimaryButton padding={10} borderColor="yellow">
         Primary button
-      </PrimaryButton>
+      </PrimaryButton> */}
+      <h1>nestooooo</h1>
     </>
   );
 }
