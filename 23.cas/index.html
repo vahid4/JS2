@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Moja prodavnica</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Moja prodavnica</h1>
+      <nav>
+        <ul>
+          <li><a href="#proizvodi">Proizvodi</a></li>
+          <li><a href="#o_nama">O nama</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="proizvodi">
+        <h2>Naši proizvodi</h2>
+        <p>Pogledajte našu ponudu proizvoda:</p>
+        <ul>
+          <li>
+            <h3>Proizvod 1</h3>
+            <img src="product1.jpg" alt="Product 1" />
+            <p>Opis proizvoda 1</p>
+          </li>
+          <li>
+            <h3>Proizvod 2</h3>
+            <img src="product2.jpg" alt="Product 2" />
+            <p>Opis proizvoda 2</p>
+          </li>
+        </ul>
+      </section>
+      <section id="o_nama">
+        <h2>O nama</h2>
+        <p>
+          Mi smo prodavnica koja se bavi prodajom kvalitetnih proizvoda. Naš
+          cilj je zadovoljstvo naših kupaca.
+        </p>
+      </section>
+      <section id="kontakt">
+        <h2>Kontakt</h2>
+        <form action="#">
+          <label for="ime">Ime:</label>
+          <input type="text" id="ime" name="ime" /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="poruka">Poruka:</label>
+          <textarea id="poruka" name="poruka"></textarea><br /><br />
+          <input type="submit" value="Pošalji" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023 Moja prodavnica</p>
+    </footer>
+  </body>
+</html>
