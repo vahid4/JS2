@@ -10,6 +10,11 @@ const CustomDiv = ({
   padding,
   margin,
   bgColor,
+  display,
+  justifyContent,
+  justifyItems,
+  alignItems,
+  alignContent,
 }) => {
   const divWidth = width ? width : 100;
   const divHeight = height ? height : 100;
@@ -18,6 +23,11 @@ const CustomDiv = ({
   const divMargin = margin ? margin : 0;
   const divPadding = padding ? padding : 0;
   const backGroundColor = bgColor ? bgColor : "white";
+  const disp = display ? display : "block";
+  const jc = justifyContent ? justifyContent : "flex-start";
+  const ji = justifyItems ? justifyItems : "center";
+  const ai = alignItems ? alignItems : "center";
+  const ac = alignContent ? alignContent : "center";
 
   return (
     <div
@@ -29,6 +39,11 @@ const CustomDiv = ({
         margin: divMargin,
         padding: divPadding,
         backgroundColor: backGroundColor,
+        display: disp,
+        justifyContent: jc,
+        justifyItems: ji,
+        alignContent: ac,
+        alignItems: ai,
       }}
     >
       {children}
