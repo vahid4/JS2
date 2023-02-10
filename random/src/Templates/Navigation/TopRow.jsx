@@ -16,23 +16,11 @@ const TopRow = () => {
     >
       <Grid container direction="row">
         <Grid item lg={6} spacing={0}>
-          <CustomDiv
-            width="50%"
-            border="0px"
-            bgColor="inherit"
-            display="flex"
-            alignItems="center"
-          >
+          <CustomDiv width="50%" display="flex" alignItems="center">
             <PhoneIcon style={{ fontSize: fontSize.normal }} />
             <p>+381669754145</p>
           </CustomDiv>
-          <CustomDiv
-            width="50%"
-            border="0px"
-            bgColor="inherit"
-            display="flex"
-            alignItems="center"
-          ></CustomDiv>
+          <CustomDiv width="50%" display="flex" alignItems="center"></CustomDiv>
         </Grid>
       </Grid>
     </CustomDiv>
