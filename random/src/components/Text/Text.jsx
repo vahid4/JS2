@@ -10,7 +10,7 @@ const Text = styled.p`
   text-decoration: ${(props) =>
     props.textDecoration ? props.textDecoration : "none"};
   letter-spacing: ${(props) =>
-    props.letterSpacing ? props.letterSpacing : "1px"};
+    props.letterSpacing ? props.letterSpacing : "0px"};
   vertical-align: ${(props) =>
     props.verticalAlign ? props.verticalAlign : "middle"};
   margin-top: ${(props) => (props.mt ? props.mt : "0px")};
