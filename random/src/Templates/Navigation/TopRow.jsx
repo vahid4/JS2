@@ -4,6 +4,7 @@ import CustomDiv from "../../components/CustomDiv/CustomDiv";
 import { colors } from "../../util/theme";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { fontSize, fontStyle } from "@mui/system";
+import Text from "../../components/Text/Text";
 
 const TopRow = () => {
   return (
@@ -16,11 +17,15 @@ const TopRow = () => {
     >
       <Grid container direction="row">
         <Grid item lg={6} spacing={0}>
-          <CustomDiv width="50%" display="flex" alignItems="center">
+          <CustomDiv
+            display="flex"
+            alignItems="center"
+            justifyItems="flex-start"
+          >
             <PhoneIcon style={{ fontSize: fontSize.normal }} />
-            <p>+381669754145</p>
+            <Text fontSize={fontSize.small}>+381669754145</Text>
           </CustomDiv>
-          <CustomDiv width="50%" display="flex" alignItems="center"></CustomDiv>
+          <CustomDiv display="flex" alignItems="center"></CustomDiv>
         </Grid>
       </Grid>
     </CustomDiv>
