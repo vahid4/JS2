@@ -6,6 +6,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import Text from "../../components/Text/Text";
 import { getScreenWidth } from "../../util/helpers";
 
@@ -37,6 +38,9 @@ const TopRow = () => {
                 style={{ fontSize: fontSize.normal, margin: "0px 0px 0px 5px" }}
               />
               <InstagramIcon
+                style={{ fontSize: fontSize.normal, margin: "0px 0px 0px 5px" }}
+              />
+              <FacebookIcon
                 style={{ fontSize: fontSize.normal, margin: "0px 0px 0px 5px" }}
               />
             </CustomDiv>
