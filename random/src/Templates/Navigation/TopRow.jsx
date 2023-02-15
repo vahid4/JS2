@@ -78,7 +78,6 @@ const TopRow = () => {
             display="flex"
             alignItems="center"
             justifyContent="flex-end"
-            textAlign="right"
           >
             <SocialIcons />
           </CustomDiv>
