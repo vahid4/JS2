@@ -10,6 +10,32 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import Text from "../../components/Text/Text";
 import { getScreenWidth } from "../../util/helpers";
 
+const SocialIcons = () => (
+  <>
+    <TwitterIcon
+      style={{
+        fontSize: fontSize.normal,
+        color: colors.gray,
+        margin: "0px 10px",
+      }}
+    />
+    <InstagramIcon
+      style={{
+        fontSize: fontSize.normal,
+        color: colors.gray,
+        margin: "0px 10px",
+      }}
+    />
+    <FacebookIcon
+      style={{
+        fontSize: fontSize.normal,
+        color: colors.gray,
+        margin: "0px 10px",
+      }}
+    />
+  </>
+);
+
 const TopRow = () => {
   const screenWidth = getScreenWidth();
 
@@ -54,24 +80,7 @@ const TopRow = () => {
             justifyContent="flex-end"
             textAlign="right"
           >
-            <TwitterIcon
-              style={{
-                fontSize: fontSize.normal,
-                color: colors.gray,
-              }}
-            />
-            <InstagramIcon
-              style={{
-                fontSize: fontSize.normal,
-                color: colors.gray,
-              }}
-            />
-            <FacebookIcon
-              style={{
-                fontSize: fontSize.normal,
-                color: colors.gray,
-              }}
-            />
+            <SocialIcons />
           </CustomDiv>
         </Grid>
       </Grid>

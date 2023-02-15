@@ -15,6 +15,7 @@ const CustomDiv = ({
   justifyItems,
   alignItems,
   alignContent,
+  letterSpacing,
 }) => {
   const divWidth = width ? width : "auto";
   const divHeight = height ? height : "auto";
@@ -28,6 +29,7 @@ const CustomDiv = ({
   const ji = justifyItems ? justifyItems : "center";
   const ai = alignItems ? alignItems : "center";
   const ac = alignContent ? alignContent : "center";
+  const ls = letterSpacing ? letterSpacing : "0px";
 
   return (
     <div
@@ -44,6 +46,7 @@ const CustomDiv = ({
         justifyItems: ji,
         alignContent: ac,
         alignItems: ai,
+        letterSpacing: ls,
       }}
     >
       {children}
