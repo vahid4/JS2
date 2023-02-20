@@ -74,7 +74,11 @@ const MainBar = () => {
         <Grid item md={6} lg={6}>
           <RightMenu />
         </Grid>
-        <hr style={{ width: "100%", color: colors.lightGray }} />
+        <CustomDiv
+          width="100px"
+          height="10px"
+          borderBottom="0.5px solid #b3b1b1"
+        />
       </Grid>
     </CustomDiv>
   );
