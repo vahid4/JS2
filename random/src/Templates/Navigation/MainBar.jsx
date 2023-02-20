@@ -12,12 +12,12 @@ const MainBar = () => {
       display="flex"
       width="100%"
       height="30px"
-      padding="0px 5%"
+      padding="20px 5%"
       border="0px"
     >
       <Grid container direction="row">
         <Grid item md={6} lg={6}>
-          <img src={logo2} alt="Logo" width="150" height="auto" />
+          <img src={logo2} alt="Logo" width="120" height="auto" />
         </Grid>
         <Grid item md={6} lg={6}></Grid>
       </Grid>
