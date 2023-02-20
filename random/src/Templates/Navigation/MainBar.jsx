@@ -75,9 +75,9 @@ const MainBar = () => {
           <RightMenu />
         </Grid>
         <CustomDiv
-          width="100px"
+          width="100%"
           height="10px"
-          borderBottom="0.5px solid #b3b1b1"
+          borderBottom="0.3px solid #b3b1b1"
         />
       </Grid>
     </CustomDiv>
