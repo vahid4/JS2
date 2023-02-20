@@ -18,28 +18,39 @@ const iconsStyle = {
 };
 
 const RightMenu = () => (
-  <CustomDiv display="flex" alignItems="center" justifyContent="flex-end">
-    <CustomDiv display="flex">
+  <CustomDiv
+    display="flex"
+    alignItems="center"
+    justifyContent="flex-end"
+    height="100%"
+  >
+    <CustomDiv display="flex" margin="0px 10px">
       <PersonIcon style={iconsStyle} />
-      <Text fontSize={fontSize.medium} color={colors.gray}>
+      <Text fontSize={fontSize.smallPlus} color={colors.gray}>
         Account
       </Text>
     </CustomDiv>
-    <CustomDiv display="flex">
+    <CustomDiv display="flex" margin="0px 10px">
       <StarIcon style={iconsStyle} />
-      <Text fontSize={fontSize.medium} color={colors.gray}>
+      <Text fontSize={fontSize.smallPlus} color={colors.gray}>
+        Wishlist
+      </Text>
+    </CustomDiv>
+    <CustomDiv display="flex" margin="0px 10px">
+      <LocationSearchingIcon style={iconsStyle} />
+      <Text fontSize={fontSize.smallPlus} color={colors.gray}>
         Checkout
       </Text>
     </CustomDiv>
-    <CustomDiv display="flex">
+    <CustomDiv display="flex" margin="0px 10px">
       <ShoppingCartIcon style={iconsStyle} />
-      <Text fontSize={fontSize.medium} color={colors.gray}>
+      <Text fontSize={fontSize.smallPlus} color={colors.gray}>
         Cart
       </Text>
     </CustomDiv>
-    <CustomDiv display="flex">
+    <CustomDiv display="flex" margin="0px 10px">
       <LockIcon style={iconsStyle} />
-      <Text fontSize={fontSize.medium} color={colors.gray}>
+      <Text fontSize={fontSize.smallPlus} color={colors.gray}>
         Log in
       </Text>
     </CustomDiv>
@@ -63,6 +74,7 @@ const MainBar = () => {
         <Grid item md={6} lg={6}>
           <RightMenu />
         </Grid>
+        <hr style={{ width: "100%", color: colors.lightGray }} />
       </Grid>
     </CustomDiv>
   );
