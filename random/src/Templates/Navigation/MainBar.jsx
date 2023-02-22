@@ -76,7 +76,7 @@ const MainBar = () => {
         </Grid>
         <CustomDiv
           width="100%"
-          height="10px"
+          height="20px"
           borderBottom="0.3px solid #b3b1b1"
         />
       </Grid>
