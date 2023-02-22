@@ -2,10 +2,11 @@ import * as React from "react";
 import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Autocomplete from "@mui/material/Autocomplete";
+import SearchIcon from "@mui/icons-material/Search";
 
 export default function FreeSolo() {
   return (
-    <Stack spacing={2} sx={{ width: 300 }}>
+    <Stack spacing={2} sx={{ width: 200 }}>
       <Autocomplete
         freeSolo
         id="free-solo-2-demo"
@@ -14,7 +15,7 @@ export default function FreeSolo() {
         renderInput={(params) => (
           <TextField
             {...params}
-            label="Search input"
+            label="Search"
             InputProps={{
               ...params.InputProps,
               type: "search",

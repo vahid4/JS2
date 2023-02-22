@@ -3,6 +3,7 @@ import CustomDiv from "../../components/CustomDiv/CustomDiv";
 import { Grid } from "@mui/material";
 import Text from "../../components/Text/Text";
 import SearchAppBar from "../../components/SearchBar/SearchBar";
+import FreeSolo from "../../components/SearchBar/SearchBar";
 
 const LeftMenu = () => (
   <CustomDiv
@@ -52,7 +53,8 @@ const LinkBar = () => {
             height="100%"
             border="0px"
           >
-            <SearchAppBar />
+            {/* <SearchAppBar /> */}
+            <FreeSolo />
           </CustomDiv>
         </Grid>
       </Grid>
