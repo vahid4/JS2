@@ -4,10 +4,12 @@ import { Carousel as SliderCarousel } from "react-responsive-carousel";
 const Carousel = ({ data }) => {
   return (
     <SliderCarousel>
-      <div>
-        <img src="assets/1.jpeg" />
-        <p className="legend">Legend 1</p>
-      </div>
+      {data.map((d) => (
+        <div>
+          <img src={d.imgSrc} />
+          <p className="legend">{d.imgText}</p>
+        </div>
+      ))}
     </SliderCarousel>
   );
 };
