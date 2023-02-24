@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Autocomplete from "@mui/material/Autocomplete";
 import SearchIcon from "@mui/icons-material/Search";
-import { InputAdornment } from "@mui/material";
+import InputAdornment from "@mui/material/InputAdornment";
 
 export default function FreeSolo() {
   return (
@@ -21,8 +21,6 @@ export default function FreeSolo() {
             InputProps={{
               ...params.InputProps,
               type: "search",
-            }}
-            inputProps={{
               endAdornment: (
                 <InputAdornment position="end">
                   <SearchIcon />
