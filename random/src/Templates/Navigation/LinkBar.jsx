@@ -9,6 +9,7 @@ const styles = {
   navBar: {
     display: "flex",
     gap: "30px",
+    height: "40px",
     alignItems: "center",
   },
 };
