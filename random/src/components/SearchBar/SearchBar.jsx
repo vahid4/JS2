@@ -3,6 +3,7 @@ import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Autocomplete from "@mui/material/Autocomplete";
 import SearchIcon from "@mui/icons-material/Search";
+import { InputAdornment } from "@mui/material";
 
 export default function FreeSolo() {
   return (
@@ -14,11 +15,19 @@ export default function FreeSolo() {
         options={top100Films.map((option) => option.title)}
         renderInput={(params) => (
           <TextField
+            size="small"
             {...params}
             label="Search"
             InputProps={{
               ...params.InputProps,
               type: "search",
+            }}
+            inputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <SearchIcon />
+                </InputAdornment>
+              ),
             }}
           />
         )}
