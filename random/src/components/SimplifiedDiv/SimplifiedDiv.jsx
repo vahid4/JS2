@@ -1,7 +1,7 @@
 import React from "react";
 
-const SimplifiedDiv = () => {
-  return <div>SimplifiedDiv</div>;
+const SimplifiedDiv = ({ style, children }) => {
+  return <div style={style}>{children}</div>;
 };
 
 export default SimplifiedDiv;

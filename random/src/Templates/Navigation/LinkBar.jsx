@@ -5,6 +5,14 @@ import Text from "../../components/Text/Text";
 import SearchAppBar from "../../components/SearchBar/SearchBar";
 import FreeSolo from "../../components/SearchBar/SearchBar";
 
+const styles = {
+  navBar: {
+    display: "flex",
+    gap: "30px",
+    alignItems: "center",
+  },
+};
+
 const LeftMenu = () => (
   <CustomDiv
     display="flex"
