@@ -24,6 +24,7 @@ const Carousel = ({ data }) => {
       autoPlay
       infiniteLoop={true}
       showStatus={false}
+      swipeable
     >
       {data.map((d) => (
         <div key={d} style={{ height: "400px" }}>
