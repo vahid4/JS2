@@ -8,6 +8,7 @@ import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 const styles = {
   sliderContainer: {
     height: "200px",
+    margin: "0px 10%",
   },
 };
 
@@ -15,15 +16,15 @@ const Slider = () => {
   const sliders = [
     {
       imgSrc: girl1,
-      imgText: "Image 1",
+      imgText: "Zaova",
     },
     {
       imgSrc: girl2,
-      imgText: "Image 2",
+      imgText: "Svekrva",
     },
     {
       imgSrc: girl3,
-      imgText: "Image 3",
+      imgText: "Snaha",
     },
   ];
 
