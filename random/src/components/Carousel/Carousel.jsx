@@ -3,7 +3,6 @@ import { Carousel as SliderCarousel } from "react-responsive-carousel";
 import Text from "../Text/Text";
 import { colors, fontSize } from "../../util/theme";
 import SimplifiedDiv from "../SimplifiedDiv/SimplifiedDiv";
-import styled from "styled-components";
 
 const Carousel = ({ data }) => {
   const styles = {
