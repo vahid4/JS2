@@ -8,7 +8,6 @@ import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 const styles = {
   sliderContainer: {
     height: "200px",
-    width: "100%",
   },
 };
 
