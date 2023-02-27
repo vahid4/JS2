@@ -5,33 +5,43 @@ import girl2 from "../../assets/images/home/girl2.jpg";
 import girl3 from "../../assets/images/home/girl3.jpg";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import { Grid } from "@mui/material";
+import { getScreenWidth } from "../../util/helpers";
 
-const styles = {
-  sliderContainer: {
-    height: "200px",
-    margin: "0px 10%",
+const sliders = [
+  {
+    imgSrc: girl1,
+    imgText: "Zaova",
   },
-};
+  {
+    imgSrc: girl2,
+    imgText: "Svekrva",
+  },
+  {
+    imgSrc: girl3,
+    imgText: "Snaha",
+  },
+];
 
 const Slider = () => {
-  const sliders = [
-    {
-      imgSrc: girl1,
-      imgText: "Zaova",
+  const deviceWidth = getScreenWidth();
+
+  const setSliderMargin =
+    deviceWidth === "SM"
+      ? "0px"
+      : deviceWidth === "MD"
+      ? "0px 10px"
+      : "0px 10%";
+
+  const styles = {
+    sliderContainer: {
+      height: "200px",
+      margin: setSliderMargin,
     },
-    {
-      imgSrc: girl2,
-      imgText: "Svekrva",
-    },
-    {
-      imgSrc: girl3,
-      imgText: "Snaha",
-    },
-  ];
+  };
 
   return (
-    <Grid>
-      <Grid>
+    <Grid container direction="row">
+      <Grid item sx={12} sm={12} md={12} lg={12}>
         <SimplifiedDiv style={styles.sliderContainer}>
           <Carousel data={sliders} />
         </SimplifiedDiv>
