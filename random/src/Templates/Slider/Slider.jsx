@@ -32,11 +32,19 @@ const Slider = () => {
       ? "0px 10px"
       : "0px 10%";
 
+  const setPaddingTop =
+    deviceWidth === "SM"
+      ? "10px"
+      : deviceWidth === "MD"
+      ? "0px 20px"
+      : "0px 30px";
+
   const styles = {
     sliderContainer: {
       width: "100%",
       height: "200px",
       margin: setSliderMargin,
+      paddingTop: setPaddingTop,
     },
   };
 
