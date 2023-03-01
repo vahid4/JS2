@@ -41,6 +41,8 @@ const TopRow = () => {
   const screenWidth = getScreenWidth();
   // console.log(screenWidth);
 
+  const alignItemsDiv = screenWidth === "SM" ? "center" : "flex-end";
+
   return (
     <CustomDiv
       bgColor={colors.secondColor}
@@ -53,7 +55,7 @@ const TopRow = () => {
       <Grid container direction="row">
         <SimplifiedDiv
           style={{
-            justifyContent: screenWidth === "SM" ? "center" : "flex-end",
+            justifyContent: { alignItemsDiv },
           }}
         >
           <Grid item xs={12} sm={12} md={6} lg={6}>
