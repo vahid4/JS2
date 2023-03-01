@@ -9,6 +9,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import Text from "../../components/Text/Text";
 import { getScreenWidth } from "../../util/helpers";
+import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 
 const SocialIcons = () => (
   <>
@@ -50,37 +51,43 @@ const TopRow = () => {
       border="0px"
     >
       <Grid container direction="row">
-        <Grid item xs={12} sm={12} md={6} lg={6}>
-          <CustomDiv display="flex" alignItems="center">
-            <PhoneIcon
-              style={{
-                fontSize: fontSize.normal,
-              }}
-            />
-            <Text fontSize={fontSize.small}>+38163333333</Text>
-            <CustomDiv
-              display="flex"
-              alignItems="center"
-              margin="0px 0px 0px 5px"
-            >
-              <EmailIcon
+        <SimplifiedDiv
+          style={{
+            justifyContent: screenWidth === "SM" ? "center" : "flex-end",
+          }}
+        >
+          <Grid item xs={12} sm={12} md={6} lg={6}>
+            <CustomDiv display="flex" alignItems="center">
+              <PhoneIcon
                 style={{
                   fontSize: fontSize.normal,
                 }}
               />
-              <Text fontSize={fontSize.small}>info@mail.com</Text>
+              <Text fontSize={fontSize.small}>+38163333333</Text>
+              <CustomDiv
+                display="flex"
+                alignItems="center"
+                margin="0px 0px 0px 5px"
+              >
+                <EmailIcon
+                  style={{
+                    fontSize: fontSize.normal,
+                  }}
+                />
+                <Text fontSize={fontSize.small}>info@mail.com</Text>
+              </CustomDiv>
             </CustomDiv>
-          </CustomDiv>
-        </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6}>
-          <CustomDiv
-            display="flex"
-            alignItems="center"
-            justifyContent="flex-end"
-          >
-            <SocialIcons />
-          </CustomDiv>
-        </Grid>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={6}>
+            <CustomDiv
+              display="flex"
+              alignItems="center"
+              justifyContent="flex-end"
+            >
+              <SocialIcons />
+            </CustomDiv>
+          </Grid>
+        </SimplifiedDiv>
       </Grid>
     </CustomDiv>
   );
