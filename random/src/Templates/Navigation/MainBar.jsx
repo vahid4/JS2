@@ -21,41 +21,42 @@ const iconsStyle = {
 const MainBar = () => {
   const screenWidth = getScreenWidth();
 
-  const rightMenuMargin = screenWidth === "SM" ? "20px 40px" : "0px";
+  const rightMenuMargin = screenWidth === "SM" ? "20px 5px" : "0px";
+  const rightMenuJustify = screenWidth === "SM" ? "flex-start" : "flex-end";
   const rightMenuItemsMargin = screenWidth === "SM" ? "0px 5px" : "0px 10px";
   const RightMenu = () => (
     <CustomDiv
       display="flex"
       alignItems="center"
-      justifyContent="flex-end"
+      justifyContent={rightMenuJustify}
       height="100%"
       margin={rightMenuMargin}
     >
-      <CustomDiv display="flex" margin="0px 10px">
+      <CustomDiv display="flex" margin={rightMenuItemsMargin}>
         <PersonIcon style={iconsStyle} />
         <Text fontSize={fontSize.smallPlus} color={colors.gray}>
           Account
         </Text>
       </CustomDiv>
-      <CustomDiv display="flex" margin="0px 10px">
+      <CustomDiv display="flex" margin={rightMenuItemsMargin}>
         <StarIcon style={iconsStyle} />
         <Text fontSize={fontSize.smallPlus} color={colors.gray}>
           Wishlist
         </Text>
       </CustomDiv>
-      <CustomDiv display="flex" margin="0px 10px">
+      <CustomDiv display="flex" margin={rightMenuItemsMargin}>
         <LocationSearchingIcon style={iconsStyle} />
         <Text fontSize={fontSize.smallPlus} color={colors.gray}>
           Checkout
         </Text>
       </CustomDiv>
-      <CustomDiv display="flex" margin="0px 10px">
+      <CustomDiv display="flex" margin={rightMenuItemsMargin}>
         <ShoppingCartIcon style={iconsStyle} />
         <Text fontSize={fontSize.smallPlus} color={colors.gray}>
           Cart
         </Text>
       </CustomDiv>
-      <CustomDiv display="flex" margin="0px 10px">
+      <CustomDiv display="flex" margin={rightMenuItemsMargin}>
         <LockIcon style={iconsStyle} />
         <Text fontSize={fontSize.smallPlus} color={colors.gray}>
           Log in
