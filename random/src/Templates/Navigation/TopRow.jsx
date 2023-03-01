@@ -53,43 +53,37 @@ const TopRow = () => {
       border="0px"
     >
       <Grid container direction="row">
-        <SimplifiedDiv
-          style={{
-            justifyContent: { alignItemsDiv },
-          }}
-        >
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <CustomDiv display="flex" alignItems="center">
-              <PhoneIcon
+        <Grid item xs={12} sm={12} md={6} lg={6}>
+          <CustomDiv display="flex" alignItems="center">
+            <PhoneIcon
+              style={{
+                fontSize: fontSize.normal,
+              }}
+            />
+            <Text fontSize={fontSize.small}>+38163333333</Text>
+            <CustomDiv
+              display="flex"
+              alignItems="center"
+              margin="0px 0px 0px 5px"
+            >
+              <EmailIcon
                 style={{
                   fontSize: fontSize.normal,
                 }}
               />
-              <Text fontSize={fontSize.small}>+38163333333</Text>
-              <CustomDiv
-                display="flex"
-                alignItems="center"
-                margin="0px 0px 0px 5px"
-              >
-                <EmailIcon
-                  style={{
-                    fontSize: fontSize.normal,
-                  }}
-                />
-                <Text fontSize={fontSize.small}>info@mail.com</Text>
-              </CustomDiv>
+              <Text fontSize={fontSize.small}>info@mail.com</Text>
             </CustomDiv>
-          </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6}>
-            <CustomDiv
-              display="flex"
-              alignItems="center"
-              justifyContent="flex-end"
-            >
-              <SocialIcons />
-            </CustomDiv>
-          </Grid>
-        </SimplifiedDiv>
+          </CustomDiv>
+        </Grid>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
+          <CustomDiv
+            display="flex"
+            alignItems="center"
+            justifyContent="flex-end"
+          >
+            <SocialIcons />
+          </CustomDiv>
+        </Grid>
       </Grid>
     </CustomDiv>
   );
