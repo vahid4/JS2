@@ -68,10 +68,10 @@ const MainBar = () => {
       border="0px"
     >
       <Grid container direction="row">
-        <Grid item md={6} lg={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
           <img src={logo} alt="Logo" width="140" height="auto" />
         </Grid>
-        <Grid item md={6} lg={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
           <RightMenu />
         </Grid>
         <CustomDiv
