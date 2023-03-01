@@ -41,7 +41,8 @@ const TopRow = () => {
   const screenWidth = getScreenWidth();
   // console.log(screenWidth);
 
-  const alignItemsDiv = screenWidth === "SM" ? "center" : "flex-end";
+  const alignItemsInFirstDiv = screenWidth === "SM" ? "center" : "flex-start";
+  const alignItemsInSecondDiv = screenWidth === "SM" ? "center" : "flex-end";
 
   return (
     <CustomDiv
@@ -54,7 +55,11 @@ const TopRow = () => {
     >
       <Grid container direction="row">
         <Grid item xs={12} sm={12} md={6} lg={6}>
-          <CustomDiv display="flex" alignItems="center">
+          <CustomDiv
+            display="flex"
+            alignItems="center"
+            justifyContent={alignItemsInFirstDiv}
+          >
             <PhoneIcon
               style={{
                 fontSize: fontSize.normal,
@@ -79,7 +84,7 @@ const TopRow = () => {
           <CustomDiv
             display="flex"
             alignItems="center"
-            justifyContent="flex-end"
+            justifyContent={alignItemsInSecondDiv}
           >
             <SocialIcons />
           </CustomDiv>
