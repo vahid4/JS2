@@ -38,8 +38,7 @@ const SocialIcons = () => (
 
 const TopRow = () => {
   const screenWidth = getScreenWidth();
-
-  console.log(screenWidth);
+  // console.log(screenWidth);
 
   return (
     <CustomDiv
