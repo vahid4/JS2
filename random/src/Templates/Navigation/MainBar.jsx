@@ -30,6 +30,7 @@ const MainBar = () => {
       alignItems="center"
       justifyContent={rightMenuJustify}
       height="100%"
+      width="100%"
       margin={rightMenuMargin}
     >
       <CustomDiv display="flex" margin={rightMenuItemsMargin}>
