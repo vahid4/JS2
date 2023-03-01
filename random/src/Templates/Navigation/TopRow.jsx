@@ -43,13 +43,15 @@ const TopRow = () => {
 
   const alignItemsInFirstDiv = screenWidth === "SM" ? "center" : "flex-start";
   const alignItemsInSecondDiv = screenWidth === "SM" ? "center" : "flex-end";
+  const paddingInDiv = screenWidth === "SM" ? "10px 0px" : "0px";
+  const topDivHeight = screenWidth === "SM" ? "auto" : "30px";
 
   return (
     <CustomDiv
       bgColor={colors.secondColor}
       display="flex"
       width="100%"
-      height="30px"
+      height={topDivHeight}
       padding="0px 5%"
       border="0px"
     >
@@ -59,6 +61,7 @@ const TopRow = () => {
             display="flex"
             alignItems="center"
             justifyContent={alignItemsInFirstDiv}
+            padding={paddingInDiv}
           >
             <PhoneIcon
               style={{
