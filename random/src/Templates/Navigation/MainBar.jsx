@@ -21,12 +21,15 @@ const iconsStyle = {
 const MainBar = () => {
   const screenWidth = getScreenWidth();
 
+  const rightMenuMargin = screenWidth === "SM" ? "20px 40px" : "0px";
+
   const RightMenu = () => (
     <CustomDiv
       display="flex"
       alignItems="center"
       justifyContent="flex-end"
       height="100%"
+      margin={rightMenuMargin}
     >
       <CustomDiv display="flex" margin="0px 10px">
         <PersonIcon style={iconsStyle} />
@@ -61,7 +64,8 @@ const MainBar = () => {
     </CustomDiv>
   );
 
-  const alignLogo = screenWidth === "SM" ? "center" : "flex";
+  const alignLogo = screenWidth === "SM" ? "center" : "left";
+  const mainDivPadding = screenWidth === "SM" ? "20px 0px" : "20px 10% 10px";
 
   return (
     <CustomDiv
@@ -69,7 +73,7 @@ const MainBar = () => {
       display="flex"
       width="100%"
       height="30px"
-      padding="20px 5%"
+      padding={mainDivPadding}
       border="0px"
     >
       <Grid container direction="row">
