@@ -50,7 +50,7 @@ const TopRow = () => {
       border="0px"
     >
       <Grid container direction="row">
-        <Grid item md={6} lg={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
           <CustomDiv display="flex" alignItems="center">
             <PhoneIcon
               style={{
@@ -72,7 +72,7 @@ const TopRow = () => {
             </CustomDiv>
           </CustomDiv>
         </Grid>
-        <Grid item md={6} lg={6}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
           <CustomDiv
             display="flex"
             alignItems="center"
