@@ -9,8 +9,8 @@ const Carousel = ({ data }) => {
     carouselText: {
       position: "absolute",
       bottom: 30,
-      right: 10,
       left: 10,
+      right: 10,
     },
   };
 
@@ -20,10 +20,11 @@ const Carousel = ({ data }) => {
       axis="horizontal"
       showIndicators
       showThumbs={false}
-      interval={3000}
+      interval={1000}
       autoPlay
-      infiniteLoop={true}
+      infiniteLoop
       showStatus={false}
+      showArrows={false}
       swipeable
     >
       {data.map((d) => (
@@ -31,9 +32,14 @@ const Carousel = ({ data }) => {
           <img
             src={d.imgSrc}
             style={{ height: "100%", objectFit: "contain" }}
+            alt={d.imgText}
           />
           <SimplifiedDiv style={styles.carouselText}>
-            <Text fontSize={fontSize.xLarge} color={colors.gray}>
+            <Text
+              fontSize={fontSize.xLarge}
+              color={colors.gray}
+              textAlign="left"
+            >
               {d.imgText}
             </Text>
           </SimplifiedDiv>
