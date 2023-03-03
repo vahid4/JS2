@@ -4,6 +4,8 @@ import { Grid } from "@mui/material";
 import Text from "../../components/Text/Text";
 import SearchAppBar from "../../components/SearchBar/SearchBar";
 import FreeSolo from "../../components/SearchBar/SearchBar";
+import { getScreenWidth } from "../../util/helpers";
+import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 
 const styles = {
   navBar: {
@@ -12,6 +14,37 @@ const styles = {
     height: "40px",
     alignItems: "center",
   },
+};
+
+const LinkBarLG = () => {
+  return (
+    <CustomDiv
+      bgColor="white"
+      display="flex"
+      width="100%"
+      height="30px"
+      padding="0px 10%"
+      border="0px"
+    >
+      <Grid container direction="row">
+        <Grid item md={6} lg={6}>
+          <LeftMenu />
+        </Grid>
+        <Grid item md={6} lg={6}>
+          <CustomDiv
+            display="flex"
+            alignItems="center"
+            justifyContent="flex-end"
+            height="100%"
+            border="0px"
+          >
+            {/* <SearchAppBar /> */}
+            <FreeSolo />
+          </CustomDiv>
+        </Grid>
+      </Grid>
+    </CustomDiv>
+  );
 };
 
 const LeftMenu = () => (
@@ -40,34 +73,28 @@ const LeftMenu = () => (
   </CustomDiv>
 );
 
+const LinkBarSM = () => {
+  <SimplifiedDiv
+    style={{
+      display: "block",
+      padding: "0px 10px",
+    }}
+  >
+    <SimplifiedDiv
+      style={{
+        display: "flex",
+        alignItems: "center",
+      }}
+    ></SimplifiedDiv>
+  </SimplifiedDiv>;
+};
+
 const LinkBar = () => {
-  return (
-    <CustomDiv
-      bgColor="white"
-      display="flex"
-      width="100%"
-      height="30px"
-      padding="20px 5%"
-      border="0px"
-    >
-      <Grid container direction="row">
-        <Grid item md={6} lg={6}>
-          <LeftMenu />
-        </Grid>
-        <Grid item md={6} lg={6}>
-          <CustomDiv
-            display="flex"
-            alignItems="center"
-            justifyContent="flex-end"
-            height="100%"
-            border="0px"
-          >
-            {/* <SearchAppBar /> */}
-            <FreeSolo />
-          </CustomDiv>
-        </Grid>
-      </Grid>
-    </CustomDiv>
+  const screenWidth = getScreenWidth();
+  return screenWidth === "SM" || screenWidth === "MD" ? (
+    <LinkBarSM />
+  ) : (
+    <LinkBarLG />
   );
 };
 
