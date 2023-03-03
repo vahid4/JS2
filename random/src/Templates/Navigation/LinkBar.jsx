@@ -2,13 +2,13 @@ import React from "react";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
 import { Grid, InputAdornment, TextField } from "@mui/material";
 import Text from "../../components/Text/Text";
-import SearchAppBar from "../../components/SearchBar/SearchBar";
 import FreeSolo from "../../components/SearchBar/SearchBar";
 import { getScreenWidth } from "../../util/helpers";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import { colors } from "../../util/theme";
+import { colors, fontSize } from "../../util/theme";
+import TextField from "@mui/material/TextField";
 
 const styles = {
   navBar: {
@@ -113,7 +113,7 @@ const LinkBarSM = () => {
         />
       </Grid>
       <Grid xs={4} sm={4} md={4}>
-        <SimplifiedDiv style={hamburgerButton}>
+        <SimplifiedDiv style={styles.hamburgerButton}>
           <MenuIcon style={{ color: colors.accentColor }} />
         </SimplifiedDiv>
       </Grid>
