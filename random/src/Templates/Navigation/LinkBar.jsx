@@ -1,14 +1,13 @@
-import React from "react";
+import { Grid } from "@mui/material";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
-import { Grid, InputAdornment, TextField } from "@mui/material";
-import Text from "../../components/Text/Text";
-import FreeSolo from "../../components/SearchBar/SearchBar";
-import { getScreenWidth } from "../../util/helpers";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
-import MenuIcon from "@mui/icons-material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
+import Text from "../../components/Text/Text";
 import { colors, fontSize } from "../../util/theme";
 import TextField from "@mui/material/TextField";
+import SearchIcon from "@mui/icons-material/Search";
+import InputAdornment from "@mui/material/InputAdornment";
+import { getScreenWidth } from "../../util/helpers";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const styles = {
   navBar: {
@@ -17,112 +16,105 @@ const styles = {
     height: "40px",
     alignItems: "center",
   },
+
   hamburgerButton: {
     display: "grid",
     border: "1px solid",
-    borderColor: colors.accentColor,
-    borderRadius: "10px",
+    borderColors: colors.accentColor,
+    borderRadius: "5px",
     width: "38px",
     height: "38px",
-    alignContent: "center",
     placeContent: "center",
+    alignContent: "center",
+    backgroundColor: "white",
   },
-};
-
-const LinkBarLG = () => {
-  return (
-    <CustomDiv
-      bgColor="white"
-      display="flex"
-      width="100%"
-      height="30px"
-      padding="0px 10%"
-      border="0px"
-    >
-      <Grid container direction="row">
-        <Grid item md={6} lg={6}>
-          <LeftMenu />
-        </Grid>
-        <Grid item md={6} lg={6}>
-          <CustomDiv
-            display="flex"
-            alignItems="center"
-            justifyContent="flex-end"
-            height="100%"
-            border="0px"
-          >
-            {/* <SearchAppBar /> */}
-            <FreeSolo />
-          </CustomDiv>
-        </Grid>
-      </Grid>
-    </CustomDiv>
-  );
-};
-
-const LeftMenu = () => (
-  <CustomDiv
-    display="flex"
-    alignItems="center"
-    justifyContent="flex-start"
-    height="100%"
-    border="0px"
-  >
-    <CustomDiv display="flex" margin="0px 10px">
-      <Text>Home</Text>
-    </CustomDiv>
-    <CustomDiv display="flex" margin="0px 10px">
-      <Text>Shop</Text>
-    </CustomDiv>
-    <CustomDiv display="flex" margin="0px 10px">
-      <Text>Blog</Text>
-    </CustomDiv>
-    <CustomDiv display="flex" margin="0px 10px">
-      <Text>O nama</Text>
-    </CustomDiv>
-    <CustomDiv display="flex" margin="0px 10px">
-      <Text>Kontakt</Text>
-    </CustomDiv>
-  </CustomDiv>
-);
-
-const LinkBarSM = () => {
-  <SimplifiedDiv
-    style={{
-      display: "block",
-      padding: "0px 10px",
-    }}
-  >
-    <SimplifiedDiv
-      style={{
-        display: "flex",
-        alignItems: "center",
-      }}
-    >
-      <Grid xs={8} sm={8} md={8}>
-        <TextField
-          size="small"
-          label="Search"
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <SearchIcon />
-              </InputAdornment>
-            ),
-          }}
-        />
-      </Grid>
-      <Grid xs={4} sm={4} md={4}>
-        <SimplifiedDiv style={styles.hamburgerButton}>
-          <MenuIcon style={{ color: colors.accentColor }} />
-        </SimplifiedDiv>
-      </Grid>
-    </SimplifiedDiv>
-  </SimplifiedDiv>;
 };
 
 const LinkBar = () => {
   const screenWidth = getScreenWidth();
+
+  const LinkBarLG = () => (
+    <CustomDiv display="flex" padding="0px 10%" width="100%">
+      <Grid container direction="row">
+        <Grid item sm={6} md={6} lg={6}>
+          <SimplifiedDiv style={styles.navBar}>
+            <Text fontSize={fontSize.normal} color={colors.gray}>
+              Home
+            </Text>
+            <Text fontSize={fontSize.normal} color={colors.gray}>
+              Shop
+            </Text>
+            <Text fontSize={fontSize.normal} color={colors.gray}>
+              Blog
+            </Text>
+            <Text fontSize={fontSize.normal} color={colors.gray}>
+              About
+            </Text>
+            <Text fontSize={fontSize.normal} color={colors.gray}>
+              Kontakt
+            </Text>
+          </SimplifiedDiv>
+        </Grid>
+        <Grid item sm={6} md={6} lg={6}>
+          <CustomDiv
+            display="flex"
+            alignItems="center"
+            justifyContent="flex-end"
+          ></CustomDiv>
+        </Grid>
+      </Grid>
+    </CustomDiv>
+  );
+
+  const LinkBarSM = () => (
+    <SimplifiedDiv
+      style={{
+        display: "block",
+        padding: "0px 10px",
+      }}
+    >
+      <SimplifiedDiv
+        style={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Grid xs={8} sm={8} md={8}>
+          <TextField
+            size="small"
+            label="Search"
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <SearchIcon />
+                </InputAdornment>
+              ),
+            }}
+          />
+        </Grid>
+        <Grid xs={4} sm={4} md={4}>
+          <SimplifiedDiv
+            style={{
+              display: "flex",
+              width: "100%",
+              justifyContent: "flex-end",
+            }}
+          >
+            <button style={styles.hamburgerButton}>
+              <MenuIcon
+                style={{
+                  color: colors.accentColor,
+                }}
+              />
+            </button>
+          </SimplifiedDiv>
+        </Grid>
+
+        <SimplifiedDiv></SimplifiedDiv>
+      </SimplifiedDiv>
+    </SimplifiedDiv>
+  );
+
   return screenWidth === "SM" || screenWidth === "MD" ? (
     <LinkBarSM />
   ) : (
