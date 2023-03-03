@@ -1,11 +1,13 @@
 import React from "react";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
-import { Grid } from "@mui/material";
+import { Grid, InputAdornment, TextField } from "@mui/material";
 import Text from "../../components/Text/Text";
 import SearchAppBar from "../../components/SearchBar/SearchBar";
 import FreeSolo from "../../components/SearchBar/SearchBar";
 import { getScreenWidth } from "../../util/helpers";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
+import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
 
 const styles = {
   navBar: {
@@ -86,8 +88,22 @@ const LinkBarSM = () => {
         alignItems: "center",
       }}
     >
-      <Grid xs={8} sm={8} md={8}></Grid>
-      <Grid xs={4} sm={4} md={4}></Grid>
+      <Grid xs={8} sm={8} md={8}>
+        <TextField
+          size="small"
+          label="Search"
+          InputProps={{
+            endAdornment: (
+              <InputAdornment position="end">
+                <SearchIcon />
+              </InputAdornment>
+            ),
+          }}
+        />
+      </Grid>
+      <Grid xs={4} sm={4} md={4}>
+        <MenuIcon />
+      </Grid>
     </SimplifiedDiv>
   </SimplifiedDiv>;
 };
