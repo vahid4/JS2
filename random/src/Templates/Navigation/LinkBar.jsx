@@ -28,6 +28,10 @@ const styles = {
     alignContent: "center",
     backgroundColor: "white",
   },
+  linkMenu: {
+    backgroundColor: colors.gray,
+    textAlign: "left",
+  },
 };
 
 const LinkBar = () => {
