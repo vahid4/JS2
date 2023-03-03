@@ -33,6 +33,8 @@ const styles = {
 const LinkBar = () => {
   const screenWidth = getScreenWidth();
 
+  const [isOpen, setIsOpen] = useState();
+
   const LinkBarLG = () => (
     <CustomDiv display="flex" padding="0px 10%" width="100%">
       <Grid container direction="row">
@@ -100,7 +102,10 @@ const LinkBar = () => {
               justifyContent: "flex-end",
             }}
           >
-            <button style={styles.hamburgerButton}>
+            <button
+              style={styles.hamburgerButton}
+              onClick={() => setIsOpen(!isOpen)}
+            >
               <MenuIcon
                 style={{
                   color: colors.accentColor,
@@ -110,7 +115,9 @@ const LinkBar = () => {
           </SimplifiedDiv>
         </Grid>
 
-        <SimplifiedDiv></SimplifiedDiv>
+        <SimplifiedDiv>
+          {isOpen && <SimplifiedDiv></SimplifiedDiv>}
+        </SimplifiedDiv>
       </SimplifiedDiv>
     </SimplifiedDiv>
   );
