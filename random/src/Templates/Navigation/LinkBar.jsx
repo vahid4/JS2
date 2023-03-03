@@ -17,6 +17,16 @@ const styles = {
     height: "40px",
     alignItems: "center",
   },
+  hamburgerButton: {
+    display: "grid",
+    border: "1px solid",
+    borderColor: colors.accentColor,
+    borderRadius: "10px",
+    width: "38px",
+    height: "38px",
+    alignContent: "center",
+    placeContent: "center",
+  },
 };
 
 const LinkBarLG = () => {
@@ -103,19 +113,8 @@ const LinkBarSM = () => {
         />
       </Grid>
       <Grid xs={4} sm={4} md={4}>
-        <SimplifiedDiv
-          style={{
-            display: "grid",
-            border: "1px solid",
-            borderColor: colors.accentColor,
-            borderRadius: "10px",
-            width: "30px",
-            height: "30px",
-            alignContent: "center",
-            placeContent: "center",
-          }}
-        >
-          <MenuIcon />
+        <SimplifiedDiv style={hamburgerButton}>
+          <MenuIcon style={{ color: colors.accentColor }} />
         </SimplifiedDiv>
       </Grid>
     </SimplifiedDiv>
