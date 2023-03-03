@@ -4,7 +4,6 @@ import Logo from "../../assets/images/logopravi.png";
 import Text from "../../components/Text/Text";
 import { colors, fontSize } from "../../util/theme";
 import { getScreenWidth } from "../../util/helpers";
-
 import PersonIcon from "@mui/icons-material/Person";
 import StarIcon from "@mui/icons-material/Star";
 import LocationSearchingIcon from "@mui/icons-material/LocationSearching";
@@ -19,7 +18,6 @@ const iconStyle = {
 
 const MainBar = () => {
   const screenWidth = getScreenWidth();
-
   const rightMenuMargin = screenWidth === "SM" ? "20px 5px" : "0px";
   const rightMenuJustify = screenWidth === "SM" ? "flex-start" : "flex-end";
   const rightmenuItemsMargin = screenWidth === "SM" ? "0px 5px" : "0px 10px";
