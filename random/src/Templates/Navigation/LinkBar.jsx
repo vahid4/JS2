@@ -85,7 +85,10 @@ const LinkBarSM = () => {
         display: "flex",
         alignItems: "center",
       }}
-    ></SimplifiedDiv>
+    >
+      <Grid xs={8} sm={8} md={8}></Grid>
+      <Grid xs={4} sm={4} md={4}></Grid>
+    </SimplifiedDiv>
   </SimplifiedDiv>;
 };
 
