@@ -120,7 +120,7 @@ const LinkBar = () => {
         </Grid>
 
         <SimplifiedDiv>
-          {isOpen && <SimplifiedDiv></SimplifiedDiv>}
+          {isOpen && <SimplifiedDiv style={styles.linkMenu}></SimplifiedDiv>}
         </SimplifiedDiv>
       </SimplifiedDiv>
     </SimplifiedDiv>
