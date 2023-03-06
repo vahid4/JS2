@@ -3,6 +3,9 @@ export const colors = {
   secondColor: "#F0F0E9",
   gray: "#828181",
   lightGray: "#b3b1b1",
+  lightBlack: "#2e2d2d",
+  black: "black",
+  limeGreen: "#9de848",
 };
 
 export const fontWeight = {
