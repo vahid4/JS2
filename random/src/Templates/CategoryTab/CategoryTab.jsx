@@ -9,6 +9,7 @@ const CategoryTab = () => {
       borderWidth: "0.5px",
       borderColor: colors.lightGray,
       borderRadius: "5px",
+      textAlign: "left",
     },
   };
 
