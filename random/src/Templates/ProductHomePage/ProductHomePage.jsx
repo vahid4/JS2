@@ -1,6 +1,7 @@
 import React from "react";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
 import { Grid } from "@mui/material";
+import CategoryTab from "../CategoryTab/CategoryTab";
 
 const ProductHomePage = () => {
   return (
@@ -22,7 +23,7 @@ const ProductHomePage = () => {
             padding="0px 10px"
             border="1px solid black"
           >
-            Category
+            <CategoryTab />
           </CustomDiv>
         </Grid>
 

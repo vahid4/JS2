@@ -13,7 +13,7 @@ const CategoryTab = () => {
     },
   };
 
-  return <SimplifiedDiv></SimplifiedDiv>;
+  return <SimplifiedDiv style={styles.container}></SimplifiedDiv>;
 };
 
 export default CategoryTab;
