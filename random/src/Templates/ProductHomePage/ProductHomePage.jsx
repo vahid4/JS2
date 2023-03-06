@@ -8,13 +8,36 @@ const ProductHomePage = () => {
       bgColor="white"
       display="flex"
       width="100%"
-      height="100px"
+      height="auto"
       padding="0px 10px"
       border="1px solid black"
     >
       <Grid container direction="row">
-        <Grid></Grid>
-        <Grid></Grid>
+        <Grid item sm={3} md={3} lg={3}>
+          <CustomDiv
+            bgColor="white"
+            display="flex"
+            width="100%"
+            height="500px"
+            padding="0px 10px"
+            border="1px solid black"
+          >
+            Category
+          </CustomDiv>
+        </Grid>
+
+        <Grid item sm={9} md={9} lg={9}>
+          <CustomDiv
+            bgColor="white"
+            display="flex"
+            width="100%"
+            height="500px"
+            padding="0px 10px"
+            border="1px solid black"
+          >
+            Products
+          </CustomDiv>
+        </Grid>
       </Grid>
     </CustomDiv>
   );
