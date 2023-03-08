@@ -32,6 +32,7 @@ const styles = {
     backgroundColor: colors.gray,
     textAlign: "left",
     padding: "10px 20px",
+    margin: "15px 0px",
   },
   links: {
     padding: "10px 0px",
