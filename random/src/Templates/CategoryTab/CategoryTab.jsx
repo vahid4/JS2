@@ -84,14 +84,23 @@ const subCategory = [
 const CategoryTab = () => {
   const styles = {
     container: {
-      borderWidth: "0.5px",
+      border: `2px solid ${colors.lightGray}`,
       borderColor: colors.lightGray,
-      borderRadius: "5px",
+      borderRadius: "2px",
       textAlign: "left",
+    },
+    category: {
+      padding: "5px 0px",
     },
   };
 
-  return <SimplifiedDiv style={styles.container}></SimplifiedDiv>;
+  return (
+    <SimplifiedDiv style={styles.container}>
+      {categories.map((cat) => {
+        return <Text style={styles.category}>{cat.name}</Text>;
+      })}
+    </SimplifiedDiv>
+  );
 };
 
 export default CategoryTab;
