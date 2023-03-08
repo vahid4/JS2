@@ -19,7 +19,7 @@ const ProductHomePage = () => {
             bgColor="white"
             display="flex"
             width="100%"
-            height="500px"
+            height="auto"
             padding="0px 10px"
             border="1px solid black"
           >
