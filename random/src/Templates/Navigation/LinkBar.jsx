@@ -134,19 +134,19 @@ const LinkBar = () => {
       </SimplifiedDiv>
       {isOpen && (
         <SimplifiedDiv style={styles.linkMenu}>
-          <Text fontSize={fontSize.normal} color={colors.gray}>
+          <Text fontSize={fontSize.normal} color={colors.white}>
             Home
           </Text>
-          <Text fontSize={fontSize.normal} color={colors.gray}>
+          <Text fontSize={fontSize.normal} color={colors.white}>
             Shop
           </Text>
-          <Text fontSize={fontSize.normal} color={colors.gray}>
+          <Text fontSize={fontSize.normal} color={colors.white}>
             Blog
           </Text>
-          <Text fontSize={fontSize.normal} color={colors.gray}>
+          <Text fontSize={fontSize.normal} color={colors.white}>
             About
           </Text>
-          <Text fontSize={fontSize.normal} color={colors.gray}>
+          <Text fontSize={fontSize.normal} color={colors.white}>
             Kontakt
           </Text>
         </SimplifiedDiv>
