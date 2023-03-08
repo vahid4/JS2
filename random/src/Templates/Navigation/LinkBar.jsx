@@ -31,10 +31,10 @@ const styles = {
   linkMenu: {
     backgroundColor: colors.gray,
     textAlign: "left",
-    padding: "0px 20px",
+    padding: "10px 20px",
   },
   links: {
-    margin: "20px 0px",
+    padding: "10px 0px",
   },
 };
 
@@ -138,19 +138,39 @@ const LinkBar = () => {
       </SimplifiedDiv>
       {isOpen && (
         <SimplifiedDiv style={styles.linkMenu}>
-          <Text fontSize={fontSize.normal} color={colors.white}>
+          <Text
+            style={styles.links}
+            fontSize={fontSize.normal}
+            color={colors.white}
+          >
             Home
           </Text>
-          <Text fontSize={fontSize.normal} color={colors.white}>
+          <Text
+            style={styles.links}
+            fontSize={fontSize.normal}
+            color={colors.white}
+          >
             Shop
           </Text>
-          <Text fontSize={fontSize.normal} color={colors.white}>
+          <Text
+            style={styles.links}
+            fontSize={fontSize.normal}
+            color={colors.white}
+          >
             Blog
           </Text>
-          <Text fontSize={fontSize.normal} color={colors.white}>
+          <Text
+            style={styles.links}
+            fontSize={fontSize.normal}
+            color={colors.white}
+          >
             About
           </Text>
-          <Text fontSize={fontSize.normal} color={colors.white}>
+          <Text
+            style={styles.links}
+            fontSize={fontSize.normal}
+            color={colors.white}
+          >
             Kontakt
           </Text>
         </SimplifiedDiv>
