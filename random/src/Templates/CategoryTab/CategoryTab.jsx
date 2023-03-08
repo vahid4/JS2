@@ -2,6 +2,7 @@ import React from "react";
 import Text from "../../components/Text/Text";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import { colors } from "../../util/theme";
+import AddIcon from "@mui/icons-material/Add";
 
 const categories = [
   {
@@ -42,6 +43,40 @@ const categories = [
   },
   {
     name: "Shoes",
+    active: false,
+  },
+];
+
+const subCategory = [
+  {
+    categoryName: "Sportswear",
+    name: "Adidas",
+    active: false,
+  },
+  {
+    categoryName: "Sportswear",
+    name: "Nike",
+    active: false,
+  },
+  {
+    categoryName: "Sportswear",
+    name: "Puma",
+    active: false,
+  },
+  {
+    categoryName: "Sportswear",
+    name: "UnderArmour",
+    active: false,
+  },
+
+  {
+    categoryName: "Mens",
+    name: "Adidas",
+    active: false,
+  },
+  {
+    categoryName: "Mens",
+    name: "Nikee",
     active: false,
   },
 ];
