@@ -31,6 +31,7 @@ const styles = {
   linkMenu: {
     backgroundColor: colors.gray,
     textAlign: "left",
+    padding: "20px",
   },
 };
 
