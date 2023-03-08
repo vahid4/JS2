@@ -3,6 +3,49 @@ import Text from "../../components/Text/Text";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import { colors } from "../../util/theme";
 
+const categories = [
+  {
+    name: "Sportswear",
+    active: false,
+  },
+  {
+    name: "Mens",
+    active: false,
+  },
+  {
+    name: "Womens",
+    active: false,
+  },
+  {
+    name: "Kids",
+    active: false,
+  },
+  {
+    name: "Fashion",
+    active: false,
+  },
+  {
+    name: "Households",
+    active: false,
+  },
+  {
+    name: "Interiors",
+    active: false,
+  },
+  {
+    name: "Clothing",
+    active: false,
+  },
+  {
+    name: "Bags",
+    active: false,
+  },
+  {
+    name: "Shoes",
+    active: false,
+  },
+];
+
 const CategoryTab = () => {
   const styles = {
     container: {
