@@ -126,9 +126,9 @@ const CategoryTab = () => {
               )}
             </SimplifiedDiv>
             {filteredSubCategories.length > 0 && (
-              <SimplifiedDiv>
+              <SimplifiedDiv style={styles.subCategoryContainer}>
                 {filteredSubCategories.map((sub) => (
-                  <Text>{sub.name}</Text>
+                  <Text style={styles.subCategoryText}>{sub.name}</Text>
                 ))}
               </SimplifiedDiv>
             )}
