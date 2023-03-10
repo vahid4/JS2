@@ -113,7 +113,9 @@ const CategoryTab = () => {
           <>
             <SimplifiedDiv style={styles.categoryContainer}>
               <Text style={styles.category}>{cat.name}</Text>
-              <AddIcon style={styles.addIconStyle} />
+              {filteredSubCategories.length > 0 && (
+                <AddIcon style={styles.addIconStyle} />
+              )}
             </SimplifiedDiv>
             {filteredSubCategories.length > 0 && (
               <SimplifiedDiv>
