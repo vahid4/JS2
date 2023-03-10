@@ -105,7 +105,7 @@ const CategoryTab = () => {
       padding: "5px 10px",
     },
     subCategoryText: {
-      fontSize: fontSize.normal,
+      fontSize: fontSize.smallPlus,
       color: colors.gray,
       padding: "2px 0px",
     },
