@@ -3,6 +3,7 @@ import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import Text from "../../components/Text/Text";
 import { colors, fontSize } from "../../util/theme";
 import AddIcon from "@mui/icons-material/Add";
+import { useState } from "react";
 
 const categories = [
   {
@@ -81,6 +82,8 @@ const subCategory = [
 ];
 
 const CategoryTab = () => {
+  const [isOpenCategory, setIsOpenCategory] = useState("");
+
   const styles = {
     container: {
       width: "100%",
@@ -123,7 +126,16 @@ const CategoryTab = () => {
             <SimplifiedDiv style={styles.categoryContainer}>
               <Text style={styles.category}>{cat.name}</Text>
               {filteredSubCategories.length > 0 && (
-                <AddIcon style={styles.addIconStyle} />
+                <AddIcon
+                  style={styles.addIconStyle}
+                  onClick={() =>
+                    setIsOpenCategory({
+                      ...isOpenCategory,
+                      name: cat.name,
+                      active: !cat.active,
+                    })
+                  }
+                />
               )}
             </SimplifiedDiv>
             {filteredSubCategories.length > 0 && (
