@@ -97,7 +97,11 @@ const CategoryTab = () => {
   return (
     <SimplifiedDiv style={styles.container}>
       {categories.map((cat) => {
-        return <Text style={styles.category}>{cat.name}</Text>;
+        return (
+          <SimplifiedDiv>
+            <Text style={styles.category}>{cat.name}</Text>
+          </SimplifiedDiv>
+        );
       })}
     </SimplifiedDiv>
   );
