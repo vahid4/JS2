@@ -1,7 +1,7 @@
 import React from "react";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import Text from "../../components/Text/Text";
-import { colors } from "../../util/theme";
+import { colors, fontSize } from "../../util/theme";
 import AddIcon from "@mui/icons-material/Add";
 
 const categories = [
@@ -96,16 +96,31 @@ const CategoryTab = () => {
       display: "flex",
       justifyContent: "space-between",
     },
+    addIconStyle: {
+      fontSize: fontSize.medium,
+      color: colors.accentColor,
+    },
   };
 
   return (
     <SimplifiedDiv style={styles.container}>
       {categories.map((cat) => {
+        const filteredSubCategories = subCategory.filter(
+          (sub) => sub.categoryName === cat.name
+        );
+
         return (
-          <SimplifiedDiv style={styles.categoryContainer}>
-            <Text style={styles.category}>{cat.name}</Text>
-            <AddIcon />
-          </SimplifiedDiv>
+          <>
+            <SimplifiedDiv style={styles.categoryContainer}>
+              <Text style={styles.category}>{cat.name}</Text>
+              <AddIcon style={styles.addIconStyle} />
+            </SimplifiedDiv>
+            {filteredSubCategories.length > 0 && (
+              <SimplifiedDiv>
+                <Text></Text>
+              </SimplifiedDiv>
+            )}
+          </>
         );
       })}
     </SimplifiedDiv>
