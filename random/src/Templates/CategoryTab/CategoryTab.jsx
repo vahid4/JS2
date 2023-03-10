@@ -138,13 +138,14 @@ const CategoryTab = () => {
                 />
               )}
             </SimplifiedDiv>
-            {filteredSubCategories.length > 0 && (
-              <SimplifiedDiv style={styles.subCategoryContainer}>
-                {filteredSubCategories.map((sub) => (
-                  <Text style={styles.subCategoryText}>{sub.name}</Text>
-                ))}
-              </SimplifiedDiv>
-            )}
+            {filteredSubCategories.length > 0 &&
+              isOpenCategory === cat.name && (
+                <SimplifiedDiv style={styles.subCategoryContainer}>
+                  {filteredSubCategories.map((sub) => (
+                    <Text style={styles.subCategoryText}>{sub.name}</Text>
+                  ))}
+                </SimplifiedDiv>
+              )}
           </>
         );
       })}
