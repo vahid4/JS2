@@ -92,6 +92,10 @@ const CategoryTab = () => {
     category: {
       padding: "5px 0px",
     },
+    categoryContainer: {
+      display: "flex",
+      justifyContent: "space-between",
+    },
   };
 
   return (
