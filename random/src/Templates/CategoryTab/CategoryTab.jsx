@@ -101,6 +101,13 @@ const CategoryTab = () => {
       fontSize: fontSize.medium,
       color: colors.accentColor,
     },
+    subCategoryContainer: {
+      padding: "5px 10px",
+    },
+    subCategoryText: {
+      fontSize: fontSize.normal,
+      color: colors.gray,
+    },
   };
 
   return (
