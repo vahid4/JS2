@@ -12,6 +12,7 @@ const styles = {
   headingContainer: {
     width: "100%",
     textAling: "center",
+    padding: "10px 0px",
   },
   headingText: {
     fontSize: fontSize.medium,
