@@ -95,6 +95,7 @@ const CategoryTab = () => {
     categoryContainer: {
       display: "flex",
       justifyContent: "space-between",
+      alignItems: "center",
     },
     addIconStyle: {
       fontSize: fontSize.medium,
