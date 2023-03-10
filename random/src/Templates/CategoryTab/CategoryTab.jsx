@@ -1,6 +1,6 @@
 import React from "react";
-import Text from "../../components/Text/Text";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
+import Text from "../../components/Text/Text";
 import { colors } from "../../util/theme";
 import AddIcon from "@mui/icons-material/Add";
 
@@ -64,19 +64,18 @@ const subCategory = [
     active: false,
   },
   {
-    categoryName: "Sportswear",
-    name: "UnderArmour",
-    active: false,
-  },
-
-  {
     categoryName: "Mens",
     name: "Adidas",
     active: false,
   },
   {
     categoryName: "Mens",
-    name: "Nikee",
+    name: "Nike",
+    active: false,
+  },
+  {
+    categoryName: "Mens",
+    name: "Puma",
     active: false,
   },
 ];
@@ -84,10 +83,11 @@ const subCategory = [
 const CategoryTab = () => {
   const styles = {
     container: {
-      border: `2px solid ${colors.lightGray}`,
-      borderColor: colors.lightGray,
+      width: "100%",
+      border: `0.5px solid ${colors.lightGray}`,
       borderRadius: "2px",
       textAlign: "left",
+      padding: "15px 20px",
     },
     category: {
       padding: "5px 0px",
