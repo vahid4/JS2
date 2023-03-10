@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import Text from "../../components/Text/Text";
 import CategoryTab from "../CategoryTab/CategoryTab";
-import { colors, fontSize } from "../../util/theme";
+import { colors, fontSize, fontWeight } from "../../util/theme";
 
 const styles = {
   container: {
@@ -16,6 +16,7 @@ const styles = {
   headingText: {
     fontSize: fontSize.medium,
     color: colors.accentColor,
+    fontWeight: fontWeight.mediumBold,
   },
 };
 
