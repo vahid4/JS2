@@ -4,6 +4,7 @@ import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import { Card } from "@mui/material";
 import { colors, fontSize } from "../../util/theme";
+import ShoppingCardOutlined from "@mui/icons-material/ShoppingCartOutlined";
 
 const ArticleCard = ({ title, description, image, price, onShowMore }) => {
   const styles = {
@@ -55,7 +56,8 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
           padding="10px"
           onClick={onShowMore}
         >
-          Show more
+          Add to cart
+          <ShoppingCardOutlined />
         </PrimaryButton>
       </SimplifiedDiv>
     </Card>
