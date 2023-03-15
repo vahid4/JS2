@@ -29,6 +29,10 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
       justifyContent: "center",
       padding: "10px",
     },
+    ShoppingCartIcon: {
+      fontSize: fontSize.normal,
+      margin: "0px 3px",
+    },
   };
 
   const altTag = title !== "" ? title : "Article image";
@@ -56,8 +60,8 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
           padding="10px"
           onClick={onShowMore}
         >
-          Add to cart
           <ShoppingCardOutlined />
+          Add to cart
         </PrimaryButton>
       </SimplifiedDiv>
     </Card>

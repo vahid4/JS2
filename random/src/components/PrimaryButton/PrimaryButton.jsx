@@ -19,6 +19,8 @@ const PrimaryButton = styled.button`
   height: ${(props) => (props.height ? props.height : "auto")};
   border-radius: ${(props) =>
     props.borderRadius ? props.borderRadius : "5px"};
+  display: flex;
+  align-items: center;
 `;
 
 export default PrimaryButton;
