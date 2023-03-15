@@ -14,7 +14,7 @@ const ArticlesHomePage = () => {
 
   const articles = [
     {
-      title: "Article 1",
+      title: "Zlatna ribica",
       description: lorem,
       image: article1,
       price: "25$",

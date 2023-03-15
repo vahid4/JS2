@@ -17,9 +17,11 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
       height: "100%",
     },
     descriptionContainer: {
-      display: "flex",
       textAlign: "center",
-      alignItems: "center",
+      display: "grid",
+      placeItems: "center",
+      gap: 8,
+      margin: "10px 15px",
     },
     buttonHolder: {
       display: "flex",
@@ -39,7 +41,9 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
           {price}
         </Text>
         <Text fontSize={fontSize.medium}>{title}</Text>
-        <Text fontSize={fontSize.optimal}>{description}</Text>
+        <Text color={colors.lightBlack} fontSize={fontSize.optimal}>
+          {description}
+        </Text>
       </SimplifiedDiv>
       <SimplifiedDiv style={styles.buttonHolder}>
         <PrimaryButton primary onClick={onShowMore}>
