@@ -49,7 +49,7 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
         <PrimaryButton
           primary
           borderRadius="3px"
-          padding={10}
+          padding="10px"
           onClick={onShowMore}
         >
           Show more
