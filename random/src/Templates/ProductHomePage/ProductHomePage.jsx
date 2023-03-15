@@ -4,14 +4,17 @@ import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import Text from "../../components/Text/Text";
 import CategoryTab from "../CategoryTab/CategoryTab";
 import { colors, fontSize, fontWeight } from "../../util/theme";
+import ArticlesHomePage from "../ArticlesHomePage/ArticlesHomePage";
 
 const styles = {
   container: {
+    display: "flex",
     padding: "0px 10%",
   },
   headingContainer: {
+    display: "flex",
     width: "100%",
-    textAling: "center",
+    justifyContent: "center",
     padding: "10px 0px",
   },
   headingText: {
@@ -35,6 +38,7 @@ const ProductsHomePage = () => {
           <SimplifiedDiv style={styles.headingContainer}>
             <Text style={styles.headingText}>Articles</Text>
           </SimplifiedDiv>
+          <ArticlesHomePage />
         </Grid>
       </Grid>
     </SimplifiedDiv>
