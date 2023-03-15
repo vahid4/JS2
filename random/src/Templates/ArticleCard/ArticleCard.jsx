@@ -26,6 +26,7 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
     buttonHolder: {
       display: "flex",
       justifyContent: "center",
+      padding: "10px",
     },
   };
 
@@ -42,7 +43,9 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
         </Text>
         <Text fontSize={fontSize.medium}>{title}</Text>
         <Text color={colors.lightBlack} fontSize={fontSize.optimal}>
-          {description}
+          {description.length > 50
+            ? description.slice(0, 50) + "..."
+            : description}
         </Text>
       </SimplifiedDiv>
       <SimplifiedDiv style={styles.buttonHolder}>
