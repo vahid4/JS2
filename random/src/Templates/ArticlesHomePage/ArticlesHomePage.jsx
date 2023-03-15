@@ -18,78 +18,52 @@ const ArticlesHomePage = () => {
       description: lorem,
       image: article1,
       price: "25$",
-      onShowMore: () => {
-        return;
-      },
     },
     {
       title: "Patike",
       description: lorem,
       image: article2,
       price: "99.99$",
-      onShowMore: () => {
-        return;
-      },
     },
     {
       title: "Jakna",
       description: lorem,
       image: article3,
       price: "121$",
-      onShowMore: () => {
-        return;
-      },
     },
     {
       title: "Baletanke",
       description: lorem,
       image: article1,
       price: "17$",
-      onShowMore: () => {
-        return;
-      },
     },
     {
       title: "Kapa",
       description: lorem,
       image: article2,
       price: "6$",
-      onShowMore: () => {
-        return;
-      },
     },
     {
       title: "Duks",
       description: lorem,
       image: article3,
       price: "22$",
-      onShowMore: () => {
-        return;
-      },
     },
   ];
 
   return (
     <SimplifiedDiv style={{}}>
       <Grid container direction="row" spacing={3}>
-        <Grid item md={4} lg={4}>
-          <ArticleCard />
-        </Grid>
-        <Grid item md={4} lg={4}>
-          <ArticleCard />
-        </Grid>
-        <Grid item md={4} lg={4}>
-          <ArticleCard />
-        </Grid>
-        <Grid item md={4} lg={4}>
-          <ArticleCard />
-        </Grid>
-        <Grid item md={4} lg={4}>
-          <ArticleCard />
-        </Grid>
-        <Grid item md={4} lg={4}>
-          <ArticleCard />
-        </Grid>
+        {articles.map((article) => {
+          <Grid item md={4} lg={4}>
+            <ArticleCard
+              title={article.title}
+              description={article.description}
+              image={article.image}
+              price={article.price}
+            />
+          </Grid>;
+        })}
       </Grid>
     </SimplifiedDiv>
   );
