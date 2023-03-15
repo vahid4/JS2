@@ -3,7 +3,7 @@ import Text from "../../components/Text/Text";
 import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import { Card } from "@mui/material";
-import { colors, fontSize } from "../../util/theme";
+import { colors, fontSize, fontWeight } from "../../util/theme";
 import ShoppingCardOutlined from "@mui/icons-material/ShoppingCartOutlined";
 
 const ArticleCard = ({ title, description, image, price, onShowMore }) => {
@@ -43,7 +43,11 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
         <img src={image} style={styles.image} alt={altTag} />
       </SimplifiedDiv>
       <SimplifiedDiv style={styles.descriptionContainer}>
-        <Text color={colors.accentColor} fontSize={fontSize.large}>
+        <Text
+          color={colors.accentColor}
+          fontSize={fontSize.large}
+          fontWeight={fontWeight.mediumBold}
+        >
           {price}
         </Text>
         <Text fontSize={fontSize.medium}>{title}</Text>
