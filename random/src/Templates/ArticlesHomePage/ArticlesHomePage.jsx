@@ -9,10 +9,13 @@ import article3 from "../../assets/images/home/product3.jpg";
 const ArticlesHomePage = () => {
   //Postaviti funkcije koje ce izlistavati artikle
 
+  const lorem =
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
+
   const articles = [
     {
       title: "Article 1",
-      description: "",
+      description: lorem,
       image: article1,
       price: "25$",
       onShowMore: () => {
@@ -21,7 +24,7 @@ const ArticlesHomePage = () => {
     },
     {
       title: "Patike",
-      description: "",
+      description: lorem,
       image: article2,
       price: "99.99$",
       onShowMore: () => {
@@ -30,7 +33,7 @@ const ArticlesHomePage = () => {
     },
     {
       title: "Jakna",
-      description: "",
+      description: lorem,
       image: article3,
       price: "121$",
       onShowMore: () => {
@@ -39,7 +42,7 @@ const ArticlesHomePage = () => {
     },
     {
       title: "Baletanke",
-      description: "",
+      description: lorem,
       image: article1,
       price: "17$",
       onShowMore: () => {
@@ -48,7 +51,7 @@ const ArticlesHomePage = () => {
     },
     {
       title: "Kapa",
-      description: "",
+      description: lorem,
       image: article2,
       price: "6$",
       onShowMore: () => {
@@ -57,7 +60,7 @@ const ArticlesHomePage = () => {
     },
     {
       title: "Duks",
-      description: "",
+      description: lorem,
       image: article3,
       price: "22$",
       onShowMore: () => {
