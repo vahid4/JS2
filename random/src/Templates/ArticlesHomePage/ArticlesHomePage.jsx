@@ -10,7 +10,7 @@ const ArticlesHomePage = () => {
   //Postaviti funkcije koje ce izlistavati artikle
 
   const lorem =
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
 
   const articles = [
     {
@@ -55,14 +55,16 @@ const ArticlesHomePage = () => {
     <SimplifiedDiv style={{}}>
       <Grid container direction="row" spacing={3}>
         {articles.map((article) => {
-          <Grid item md={4} lg={4}>
-            <ArticleCard
-              title={article.title}
-              description={article.description}
-              image={article.image}
-              price={article.price}
-            />
-          </Grid>;
+          return (
+            <Grid item md={4} lg={4}>
+              <ArticleCard
+                title={article.title}
+                description={article.description}
+                image={article.image}
+                price={article.price}
+              />
+            </Grid>
+          );
         })}
       </Grid>
     </SimplifiedDiv>

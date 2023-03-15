@@ -10,10 +10,9 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
     imageContainer: {
       width: "100%",
       height: "200px",
-      objectFit: "cover",
     },
     image: {
-      objectFit: "cover",
+      objectFit: "contain",
       width: "100%",
       height: "100%",
     },
