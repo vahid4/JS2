@@ -46,7 +46,12 @@ const ArticleCard = ({ title, description, image, price, onShowMore }) => {
         </Text>
       </SimplifiedDiv>
       <SimplifiedDiv style={styles.buttonHolder}>
-        <PrimaryButton primary onClick={onShowMore}>
+        <PrimaryButton
+          primary
+          borderRadius="3px"
+          padding={10}
+          onClick={onShowMore}
+        >
           Show more
         </PrimaryButton>
       </SimplifiedDiv>
