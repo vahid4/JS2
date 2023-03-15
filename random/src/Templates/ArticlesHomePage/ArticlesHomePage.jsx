@@ -8,7 +8,7 @@ const ArticlesHomePage = () => {
 
   return (
     <SimplifiedDiv style={{}}>
-      <Grid container direction="row">
+      <Grid container direction="row" spacing={3}>
         <Grid item md={4} lg={4}>
           <ArticleCard />
         </Grid>
