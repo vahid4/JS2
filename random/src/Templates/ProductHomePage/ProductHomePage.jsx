@@ -5,6 +5,7 @@ import Text from "../../components/Text/Text";
 import CategoryTab from "../CategoryTab/CategoryTab";
 import { colors, fontSize, fontWeight } from "../../util/theme";
 import ArticlesHomePage from "../ArticlesHomePage/ArticlesHomePage";
+import RecommendedArticles from "../RecommendedArticles/RecommendedArticles";
 
 const styles = {
   container: {
@@ -39,6 +40,7 @@ const ProductsHomePage = () => {
             <Text style={styles.headingText}>Articles</Text>
           </SimplifiedDiv>
           <ArticlesHomePage />
+          <RecommendedArticles />
         </Grid>
       </Grid>
     </SimplifiedDiv>
