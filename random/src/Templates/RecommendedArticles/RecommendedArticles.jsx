@@ -1,6 +1,6 @@
 import React from "react";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
-import Carousel from "../../components/Carousel/Carousel";
+import { Carousel } from "react-responsive-carousel";
 import ArticleCard from "../ArticleCard/ArticleCard";
 import { articles } from "../ArticlesHomePage/ArticlesHomePage";
 
@@ -15,6 +15,7 @@ const RecommendedArticles = () => {
       <Carousel
         showIndicators={false}
         showStatus={false}
+        autoPlay
         infiniteLoop
         interval={1000}
         swipeable
