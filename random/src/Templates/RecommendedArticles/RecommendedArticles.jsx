@@ -2,6 +2,9 @@ import React from "react";
 import article1 from "../../assets/images/home/product1.jpg";
 import article2 from "../../assets/images/home/product2.jpg";
 import article3 from "../../assets/images/home/product3.jpg";
+import { Grid } from "@mui/material";
+import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
+import Carousel from "../../components/Carousel/Carousel";
 
 const RecommendedArticles = () => {
   const lorem =
