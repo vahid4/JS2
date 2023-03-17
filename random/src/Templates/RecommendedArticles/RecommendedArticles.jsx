@@ -5,6 +5,7 @@ import article3 from "../../assets/images/home/product3.jpg";
 import { Grid } from "@mui/material";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import Carousel from "../../components/Carousel/Carousel";
+import ArticleCard from "../ArticleCard/ArticleCard";
 
 const RecommendedArticles = () => {
   const lorem =
@@ -48,11 +49,14 @@ const RecommendedArticles = () => {
       price: "22$",
     },
   ];
+
   return (
     <Grid container direction="row">
       <Grid item xs={12} sm={12} md={12} lg={12}>
         <SimplifiedDiv>
-          <Carousel data={articles} />
+          <Carousel data={articles}>
+            <ArticleCard />
+          </Carousel>
         </SimplifiedDiv>
       </Grid>
     </Grid>
