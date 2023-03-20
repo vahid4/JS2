@@ -29,3 +29,19 @@ export const fontSize = {
   large: "24px",
   xLarge: "26px",
 };
+
+export const fontFamily = {
+  LatoBlack: "LatoBlack",
+  LatoBlackItalic: "LatoBlackItalic",
+  LatoBold: "LatoBold",
+  LatoBoldItalic: "LatoBoldItalic",
+  LatoItalic: "LatoItalic",
+  LatoLight: "LatoLight",
+  LatoLightItalic: "LatoLightItalic",
+  LatoRegular: "LatoRegular",
+  LatoThin: "LatoThin",
+  LatoThinItalic: "LatoThinItalic",
+  MontserratBlack: "MontserratBlack",
+  MontserrantBlackItalic: "MontserrantBlackItalic",
+  MontserrantBold: "MontserrantBold",
+};
