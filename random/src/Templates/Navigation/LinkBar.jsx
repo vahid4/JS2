@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 import Text from "../../components/Text/Text";
-import { colors, fontSize } from "../../util/theme";
+import { colors, fontFamily, fontSize } from "../../util/theme";
 import { getScreenWidth } from "../../util/helpers.js";
 import TextField from "@mui/material/TextField";
 import SearchIcon from "@mui/icons-material/Search";
@@ -51,7 +51,11 @@ const LinkBar = () => {
       <Grid container direction="row">
         <Grid item sm={6} md={6} lg={6}>
           <SimplifiedDiv style={styles.navBar}>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
+            <Text
+              fontFamily={fontFamily.LatoBold}
+              fontSize={fontSize.normal}
+              color={colors.gray}
+            >
               Home
             </Text>
             <Text fontSize={fontSize.normal} color={colors.gray}>
