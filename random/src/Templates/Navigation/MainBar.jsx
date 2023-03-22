@@ -1,9 +1,10 @@
 import Grid from "@mui/material/Grid";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
-import Logo from "../../assets/images/logopravi.png";
+import Logo from "../../assets/images/logo.png";
 import Text from "../../components/Text/Text";
-import { colors, fontSize } from "../../util/theme";
+import { colors, fontSize, fontFamily } from "../../util/theme";
 import { getScreenWidth } from "../../util/helpers";
+
 import PersonIcon from "@mui/icons-material/Person";
 import StarIcon from "@mui/icons-material/Star";
 import LocationSearchingIcon from "@mui/icons-material/LocationSearching";
@@ -18,6 +19,7 @@ const iconStyle = {
 
 const MainBar = () => {
   const screenWidth = getScreenWidth();
+
   const rightMenuMargin = screenWidth === "SM" ? "20px 5px" : "0px";
   const rightMenuJustify = screenWidth === "SM" ? "flex-start" : "flex-end";
   const rightmenuItemsMargin = screenWidth === "SM" ? "0px 5px" : "0px 10px";
@@ -33,31 +35,51 @@ const MainBar = () => {
     >
       <CustomDiv display="flex" margin={rightmenuItemsMargin}>
         <PersonIcon style={iconStyle} />
-        <Text fontSize={fontSize.smallPlus} color={colors.gray}>
+        <Text
+          fontFamily={fontFamily.LatoRegular}
+          fontSize={fontSize.smallPlus}
+          color={colors.gray}
+        >
           Account
         </Text>
       </CustomDiv>
       <CustomDiv display="flex" margin={rightmenuItemsMargin}>
         <StarIcon style={iconStyle} />
-        <Text fontSize={fontSize.smallPlus} color={colors.gray}>
+        <Text
+          fontFamily={fontFamily.LatoRegular}
+          fontSize={fontSize.smallPlus}
+          color={colors.gray}
+        >
           Wishlist
         </Text>
       </CustomDiv>
       <CustomDiv display="flex" margin={rightmenuItemsMargin}>
         <LocationSearchingIcon style={iconStyle} />
-        <Text fontSize={fontSize.smallPlus} color={colors.gray}>
+        <Text
+          fontFamily={fontFamily.LatoRegular}
+          fontSize={fontSize.smallPlus}
+          color={colors.gray}
+        >
           Checkout
         </Text>
       </CustomDiv>
       <CustomDiv display="flex" margin={rightmenuItemsMargin}>
         <ShoppingCartIcon style={iconStyle} />
-        <Text fontSize={fontSize.smallPlus} color={colors.gray}>
+        <Text
+          fontFamily={fontFamily.LatoRegular}
+          fontSize={fontSize.smallPlus}
+          color={colors.gray}
+        >
           Cart
         </Text>
       </CustomDiv>
       <CustomDiv display="flex" margin={rightmenuItemsMargin}>
         <LockIcon style={iconStyle} />
-        <Text fontSize={fontSize.smallPlus} color={colors.gray}>
+        <Text
+          fontFamily={fontFamily.LatoRegular}
+          fontSize={fontSize.smallPlus}
+          color={colors.gray}
+        >
           Login
         </Text>
       </CustomDiv>
