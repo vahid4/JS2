@@ -1,7 +1,12 @@
 import React from "react";
+import FooterLinkBar from "./FooterLinkBar";
 
 function Footer() {
-  return <div>Footer</div>;
+  return (
+    <>
+      <FooterLinkBar />
+    </>
+  );
 }
 
 export default Footer;

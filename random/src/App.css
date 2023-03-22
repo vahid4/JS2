@@ -93,3 +93,7 @@
   src: local("Montserrat-ExtraLight"),
     url("./assets/fonts/Montserrat-ExtraLight.ttf") format("truetype");
 }
+
+a {
+  text-decoration: none;
+}
