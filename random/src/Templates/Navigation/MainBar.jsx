@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/logopravi.png";
 import Text from "../../components/Text/Text";
 import { colors, fontSize, fontFamily } from "../../util/theme";
 import { getScreenWidth } from "../../util/helpers";

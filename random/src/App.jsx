@@ -1,4 +1,5 @@
 import "./App.css";
+import HomePageScreen from "./Screens/HomePageScreen";
 import Navigation from "./Templates/Navigation/Navigation";
 import ProductHomePage from "./Templates/ProductHomePage/ProductHomePage";
 import Slider from "./Templates/Slider/Slider";
@@ -25,7 +26,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <div>Hello world!</div>,
+      element: <HomePageScreen />,
     },
   ]);
 
