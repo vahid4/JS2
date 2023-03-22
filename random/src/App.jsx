@@ -19,8 +19,16 @@ import "./assets/fonts/Montserrat/Montserrat-Bold.ttf";
 import "./assets/fonts/Montserrat/Montserrat-BoldItalic.ttf";
 import "./assets/fonts/Montserrat/Montserrat-ExtraBold.ttf";
 import "./assets/fonts/Montserrat/Montserrat-ExtraLight.ttf";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <div>Hello world!</div>,
+    },
+  ]);
+
   return (
     <>
       <Navigation />
