@@ -38,6 +38,12 @@ const styles = {
     padding: "10px 0px",
     fontSize: fontSize.normal,
     color: colors.white,
+    fontFamily: fontFamily.LatoItalic,
+  },
+  linksLG: {
+    fontFamily: fontFamily.LatoRegular,
+    fontSize: fontSize.normal,
+    color: colors.gray,
   },
 };
 
@@ -51,25 +57,11 @@ const LinkBar = () => {
       <Grid container direction="row">
         <Grid item sm={6} md={6} lg={6}>
           <SimplifiedDiv style={styles.navBar}>
-            <Text
-              fontFamily={fontFamily.LatoBold}
-              fontSize={fontSize.normal}
-              color={colors.gray}
-            >
-              Home
-            </Text>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
-              Shop
-            </Text>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
-              Blog
-            </Text>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
-              About
-            </Text>
-            <Text fontSize={fontSize.normal} color={colors.gray}>
-              Kontakt
-            </Text>
+            <Text style={styles.linksLG}>Home</Text>
+            <Text style={styles.linksLG}>Shop</Text>
+            <Text style={styles.linksLG}>Blog</Text>
+            <Text style={styles.linksLG}>About</Text>
+            <Text style={styles.linksLG}>Kontakt</Text>
           </SimplifiedDiv>
         </Grid>
         <Grid item sm={6} md={6} lg={6}>
@@ -149,7 +141,7 @@ const LinkBar = () => {
           <Text style={styles.links}>Shop</Text>
           <Text style={styles.links}>Blog</Text>
           <Text style={styles.links}>About</Text>
-          <Text style={styles.links}>Kontakt</Text>
+          <Text style={styles.links}>Contact</Text>
         </SimplifiedDiv>
       )}
     </SimplifiedDiv>
