@@ -1,5 +1,6 @@
 import "./App.css";
 import HomePageScreen from "./Screens/HomePageScreen";
+import ShopScreen from "./Screens/ShopScreen/ShopScreen";
 import Navigation from "./Templates/Navigation/Navigation";
 import ProductHomePage from "./Templates/ProductHomePage/ProductHomePage";
 import Slider from "./Templates/Slider/Slider";
@@ -27,6 +28,10 @@ function App() {
     {
       path: "/",
       element: <HomePageScreen />,
+    },
+    {
+      path: "/shop",
+      element: <ShopScreen />,
     },
   ]);
 
