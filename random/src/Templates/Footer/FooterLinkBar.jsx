@@ -7,6 +7,10 @@ const FooterLinkBar = () => {
   const styles = {
     mainHolder: {
       backgroundColor: colors.secondColor,
+      padding: "20px",
+    },
+    headingText: {
+      textAlign: "center",
     },
   };
 
