@@ -31,9 +31,10 @@ function App() {
 
   return (
     <>
-      <Navigation />
+      {/* <Navigation />
       <Slider />
-      <ProductHomePage />
+      <ProductHomePage /> */}
+      <RouterProvider router={router} />
     </>
   );
 }
