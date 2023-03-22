@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import CustomDiv from "../../components/CustomDiv/CustomDiv";
-import { colors, fontSize } from "../../util/theme";
+import { colors, fontFamily, fontSize } from "../../util/theme";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -9,7 +9,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import Text from "../../components/Text/Text";
 import { getScreenWidth } from "../../util/helpers";
-import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
 
 const SocialIcons = () => (
   <>
@@ -39,7 +38,6 @@ const SocialIcons = () => (
 
 const TopRow = () => {
   const screenWidth = getScreenWidth();
-  // console.log(screenWidth);
 
   const alignItemsInFirstDiv = screenWidth === "SM" ? "center" : "flex-start";
   const alignItemsInSecondDiv = screenWidth === "SM" ? "center" : "flex-end";
@@ -56,9 +54,10 @@ const TopRow = () => {
       height={topDivHeight}
       padding={responsivePadding}
       border="0px"
+      alignItems="center"
     >
       <Grid container direction="row">
-        <Grid item xs={12} sm={12} md={6} lg={6}>
+        <Grid item xs={12} sm={6} md={6} lg={6}>
           <CustomDiv
             display="flex"
             alignItems="center"
@@ -70,18 +69,25 @@ const TopRow = () => {
                 fontSize: fontSize.normal,
               }}
             />
-            <Text fontSize={fontSize.small}>+38163333333</Text>
+            <Text fontFamily={fontFamily.LatoRegular} fontSize={fontSize.small}>
+              +38163333333
+            </Text>
             <CustomDiv
               display="flex"
               alignItems="center"
-              margin="0px 0px 0px 5px"
+              margin="0px 0px 0px 15px"
             >
               <EmailIcon
                 style={{
                   fontSize: fontSize.normal,
                 }}
               />
-              <Text fontSize={fontSize.small}>info@mail.com</Text>
+              <Text
+                fontFamily={fontFamily.LatoRegular}
+                fontSize={fontSize.small}
+              >
+                info@mail.com
+              </Text>
             </CustomDiv>
           </CustomDiv>
         </Grid>
@@ -90,6 +96,7 @@ const TopRow = () => {
             display="flex"
             alignItems="center"
             justifyContent={alignItemsInSecondDiv}
+            padding={paddingInDiv}
           >
             <SocialIcons />
           </CustomDiv>
