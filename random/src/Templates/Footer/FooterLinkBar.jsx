@@ -1,7 +1,8 @@
 import React from "react";
 import SimplifiedDiv from "../../components/SimplifiedDiv/SimplifiedDiv";
-import { colors } from "../../util/theme";
+import { colors, fontWeight } from "../../util/theme";
 import { Grid } from "@mui/material";
+import Text from "../../components/Text/Text";
 
 const FooterLinkBar = () => {
   const styles = {
@@ -11,6 +12,12 @@ const FooterLinkBar = () => {
     },
     headingText: {
       textAlign: "center",
+      fontWeight: fontWeight.mediumBold,
+      color: colors.gray,
+    },
+    boxHolder: {
+      textAlign: "left",
+      padding: "30px 0px",
     },
   };
 
@@ -18,28 +25,23 @@ const FooterLinkBar = () => {
     <SimplifiedDiv>
       <Grid container direction="row">
         <Grid item md={2} lg={2}>
-          <SimplifiedDiv>
-            <Text>Nesto</Text>
+          <SimplifiedDiv style={styles.boxHolder}>
+            <Text>Service</Text>
           </SimplifiedDiv>
         </Grid>
         <Grid item md={2} lg={2}>
-          <SimplifiedDiv>
-            <Text>Nesto</Text>
+          <SimplifiedDiv style={styles.boxHolder}>
+            <Text>Quick shop</Text>
           </SimplifiedDiv>
         </Grid>
         <Grid item md={2} lg={2}>
-          <SimplifiedDiv>
-            <Text>Nesto</Text>
+          <SimplifiedDiv style={styles.boxHolder}>
+            <Text>Policies</Text>
           </SimplifiedDiv>
         </Grid>
         <Grid item md={2} lg={2}>
-          <SimplifiedDiv>
-            <Text>Nesto</Text>
-          </SimplifiedDiv>
-        </Grid>
-        <Grid item md={2} lg={2}>
-          <SimplifiedDiv>
-            <Text>Nesto</Text>
+          <SimplifiedDiv style={styles.boxHolder}>
+            <Text>About shopper</Text>
           </SimplifiedDiv>
         </Grid>
       </Grid>
