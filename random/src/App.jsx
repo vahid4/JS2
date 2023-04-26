@@ -33,13 +33,22 @@ function App() {
       path: "/shop",
       element: <ShopScreen />,
     },
+    {
+      path: "/blog",
+      element: <BlogScreen></BlogScreen>,
+    },
+    {
+      path: "/about",
+      element: <About></About>,
+    },
+    {
+      path: "/contact",
+      element: <Contact></Contact>,
+    },
   ]);
 
   return (
     <>
-      {/* <Navigation />
-      <Slider />
-      <ProductHomePage /> */}
       <RouterProvider router={router} />
     </>
   );
